@@ -1,0 +1,31 @@
+{
+  "name": "f451",
+  "version": "1.0.0",
+  "description": "Website for F451",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" | exit 1",
+    "start": "webpack --watch | bundle exec jekyll serve --livereload --incremental",
+    "build": "webpack -p && bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentin-f451/f451.git"
+  },
+  "keywords": [
+    "F451"
+  ],
+  "author": "F451",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quentin-f451/f451/issues"
+  },
+  "homepage": "https://github.com/quentin-f451/f451#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

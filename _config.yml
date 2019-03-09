@@ -1,0 +1,11 @@
+title: 
+email: 
+description: >- # this means to ignore newlines until "baseurl:"
+url: ""
+
+markdown: kramdown
+source: src
+destination: public
+sass:
+  sass_dir: _scss
+  style: compressed
