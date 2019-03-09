@@ -1,0 +1,34 @@
+.grid {
+    margin-bottom: 50vh;
+}
+
+.grid__item {
+    @include padding(1 0)
+}
+
+.grid__image {
+    display: grid;
+
+    img {
+        max-width: 100%;
+        width: auto;
+        max-height: 100vh;
+    }
+
+    .grid__item.laboratory & {
+        width: 100%;
+    }
+
+    .grid__item.spaces & {
+        width: 50%;
+    }
+
+    .grid__item.collection & {
+        width: 33%;
+    }
+
+}
+
+.grid__text {
+    @include padding(2 0 0 0)
+}

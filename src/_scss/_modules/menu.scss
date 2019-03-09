@@ -1,0 +1,29 @@
+.menu {
+    @include margin(2 0 0 0);
+    display: inline-table;
+    width: 300px;
+    display: none;
+}
+
+.menu__item {
+    &--main {
+        &::after {
+            content: ':';
+        }
+    } 
+
+    &--sub {
+        &::after {
+            content: ',';
+        }
+        &:last-of-type::after {
+            content: '.';
+        }
+    }
+
+    &--nochild {
+        &::after {
+            content: '.';
+        }
+    } 
+}

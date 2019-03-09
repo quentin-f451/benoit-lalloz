@@ -27,5 +27,8 @@
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "dom-slider": "^1.5.3"
   }
 }

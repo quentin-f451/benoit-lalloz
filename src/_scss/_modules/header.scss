@@ -1,0 +1,23 @@
+.header {
+    @include padding(1 2);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $background-color;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo {
+    height: calc(1rem - #{$base-space} * 2);
+    display: inline-block;
+    width: fit-content;
+    cursor: pointer;
+    
+    img {
+        height: 100%;
+        width: auto;
+    }
+}

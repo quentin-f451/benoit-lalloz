@@ -1,0 +1,18 @@
+<section class="grid">
+    {% for post in site.posts %}
+    <article class="grid__item {{ post.type }}">
+        <div class="grid__image">
+            <img src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
+        </div>
+        <div class="grid__text">
+            {% if post.type == 'spaces' %}
+                Space for {{ post.client }} in {{ post.place }}, {{ post.year }}.
+            {% elsif post.type == 'collection' %}
+                In {{ post.collection }} collection, {{ post.title }}, {{ post.year }}.
+            {% else %}
+                From our Laboratory, watch {{ post.title }}, {{ post.year }}.
+            {% endif %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
