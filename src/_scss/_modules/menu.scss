@@ -1,9 +1,17 @@
 .menu {
     @extend .font-2;
     @include margin(2 0 0 0);
-    display: inline-table;
     width: 300px;
     display: none;
+}
+
+.menu__section {
+    opacity: 0;
+    transition: $base-transition;
+
+    .header--open & {
+        opacity: 1;
+    }
 }
 
 .menu__item {

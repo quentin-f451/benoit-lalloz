@@ -49,6 +49,13 @@ $tertiary-fallback:                         'Helvetica Neue', Helvetica, Arial, 
 .font-2 {
     font-family: $secondary-font-family, $secondary-fallback;
 }
+
+a {
+    @extend .font-2;
+    &:hover {
+        @extend .font-1;
+    }
+}
 /*
 Fallbacks examples
  - 'Times New Roman', Times, serif

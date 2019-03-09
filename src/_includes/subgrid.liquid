@@ -8,26 +8,32 @@
         {% assign columns = 1 %}
     {% endif %}
 
-    {% for post in site.posts %}
-        
+    {% assign posts = site.posts | where: "categories", include.type %}
+    {% for post in posts %}
+
+        {% assign category = post.categories[0] | strip %}    
         {% assign counter = forloop.index | modulo: columns %}
         {% if counter == 1 or columns == 1 %}<div class="subgrid__row">{% endif %}
             
             <article class="subgrid__item subgrid__item--image">
-                <div class="subgrid__image">
-                    <img src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
-                </div>
+                <a href="{{ post.url }}">
+                    <div class="subgrid__image">
+                        <img src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
+                    </div>
+                </a>
             </article>
 
             <article class="subgrid__item subgrid__item--text">
                 <div class="subgrid__text">
-                    {% if post.type == 'spaces' %}
-                        Space for {{ post.client }} in {{ post.place }}, {{ post.year }}.
-                    {% elsif post.type == 'collections' %}
-                        In {{ post.collec }} collection, {{ post.title }}, {{ post.year }}.
-                    {% else %}
-                        From our Laboratory, watch {{ post.title }}, {{ post.year }}.
-                    {% endif %}
+                    <a href="{{ post.url }}">
+                        {% if category == 'spaces' %}
+                            Space for {{ post.client }} in {{ post.place }}, {{ post.year }}.
+                        {% elsif category == 'collections' %}
+                            In {{ post.collec }} collection, {{ post.title }}, {{ post.year }}.
+                        {% else %}
+                            From our Laboratory, watch {{ post.title }}, {{ post.year }}.
+                        {% endif %}
+                    </a>
                 </div>
             </article>
 

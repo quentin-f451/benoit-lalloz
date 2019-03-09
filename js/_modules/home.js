@@ -28,15 +28,24 @@ const Home = {
     }
   },
   menuClick: (e) => {
-    Home.menu.slideToggle();
     Home.main.classList.toggle('main--blocked');
 
     if (Home.header.classList.contains('header--open')) {
+      Home.menu.slideToggle();
+      Home.header.classList.add('header--transition');
       Home.header.classList.remove('header--open');
       if (Home.header.classList.contains('header--after')) Home.scrollMenu(true)
+      setTimeout(function() {
+        Home.header.classList.remove('header--transition');
+      }, 200)
     } else {
+      Home.header.classList.add('header--transition');
       Home.header.classList.add('header--open');
       if (Home.header.classList.contains('header--after')) Home.scrollMenu(false)
+      setTimeout(function() {
+        Home.menu.slideToggle();
+        Home.header.classList.remove('header--transition');
+      }, 200)
     }
   },
   backToTop: (e) => {

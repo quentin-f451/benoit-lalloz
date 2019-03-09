@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Balanciaga
-type: spaces
+categories: spaces
 client: Balanciaga
 place: Los Angeles
 year: 2015
