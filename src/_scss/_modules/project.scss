@@ -1,0 +1,29 @@
+.project {
+    @extend .font-1;
+    margin-bottom: 50vh;
+}
+
+.project__text {
+    @include margin(0 0 8 0);
+
+    &--credits {
+        @extend .font-2;
+        @include margin(2 0 0 0);
+    }
+}
+
+.project__images {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__image {
+    @include margin(0 0 1 0);
+
+    img {
+        max-height: 110vh;
+        max-width: 100%;
+        width: auto;
+        float: left;
+    }
+}

@@ -2,15 +2,15 @@
     {% for post in site.posts %}
         {% assign category = post.categories[0] | strip %}
         <article class="grid__item grid__item--{{ category }}">
-            <a href="{{ post.url }}">
-                <div class="grid__image grid__image--{{ post.thumb_orientation }}">
+            <div class="grid__image grid__image--{{ post.thumb_orientation }}">
+                <a href="{{ post.url }}">
                     <img src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
-                </div>
-            </a>
+                </a>
+            </div>
             <div class="grid__text">
                 <a href="{{ post.url }}">
                     {% if category == 'spaces' %}
-                        Space for {{ post.client }} in {{ post.place }}, {{ post.year }}.
+                        Spaces for {{ post.client }} in {{ post.place }}, {{ post.year }}.
                     {% elsif category == 'collections' %}
                         In {{ post.collec }} collection, {{ post.title }}, {{ post.year }}.
                     {% else %}

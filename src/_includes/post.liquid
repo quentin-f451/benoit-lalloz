@@ -1,0 +1,29 @@
+{% assign category = page.categories[0] | strip %}
+
+<div class="project">
+    <div class="project__text">
+        {% if category == 'spaces' %}
+            Spaces for {{ page.client }} in {{ page.place }}, {{ page.year }}.
+        {% elsif category == 'collections' %}
+            In {{ page.collec }} collection, {{ page.title }}, {{ page.year }}.
+        {% else %}
+            From our Laboratory, watch {{ page.title }}, {{ page.year }}.
+        {% endif %}
+    </div>
+
+    <div class="project__text">
+        {{ page.content | markdownify }}
+    </div>
+
+    <div class="project__images">
+        {% for image in page.slideshow %}
+            <div class="project__image">
+                <img src="/assets/images/posts/{{ image }}" alt="{{ page.title }}" />
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="project__text project__text--credits">
+        Crédits: John Doe for all pictures at Acne Studios
+    </div>
+</div>

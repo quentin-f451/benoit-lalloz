@@ -63,14 +63,23 @@ $laboratory-grid:   1;
         .subgrid--laboratory & {
             height: calc(100vh - 2rem - 2px - 4 * #{$base-space});
         }
+
     }
 }
 
 .subgrid__image {
     height: 100%;
+    overflow: hidden;
     img {
         object-fit: cover;
         object-position: center;
         height: 100%;
+        transition: transform .6s ease-in-out;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
     }
 }
