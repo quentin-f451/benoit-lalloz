@@ -1,0 +1,24 @@
+---
+layout: infos
+---
+
+{% assign infos = site.data.infos.infos %}
+
+<article class="infos">
+    <div class="infos__text">
+        <a href="mailto:{{ infos.mail }}" target="_blank">{{ infos.mail }}</a>
+    </div>
+    <div class="infos__text">
+        <a href="https://www.instagram.com/{{ infos.instagram }}" target="_blank">@{{ infos.instagram }}</a>
+    </div>
+    <div class="infos__image">
+        <img alt="Benoit Lalloz" src="assets/images/{{ infos.image }}" />
+    </div>
+    <div class="infos__text">
+        {{ infos.extract | markdownify }}
+    </div>
+    <div class="infos__text infos__text--hidden">
+        {{ infos.text | markdownify }}
+    </div>
+    <div class="infos__more js-more js-previousHidden"></div>
+</article>

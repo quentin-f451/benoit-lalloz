@@ -1,17 +1,17 @@
 import 'dom-slider';
+import animateScrollTo from 'animated-scroll-to';
 
 const Home = {
   init: () => {
     Home.main = document.querySelector('.main');
-    Home.header = document.querySelector('.header');
-    Home.logo = document.querySelector('.header__logo');
-    Home.menu = document.querySelector('.menu');
-    Home.main.addEventListener('scroll', function (e) {
-      Home.scrollMenu(true);
-    })
-    Home.logo.addEventListener('click', function (e) {
-      Home.menuClick(e);
-    })
+    Home.header = document.querySelector('.js-header');
+    Home.logo = document.querySelector('.js-logo');
+    Home.menu = document.querySelector('.js-menu');
+    Home.top = document.querySelector('.js-top');
+
+    if(Home.main) Home.main.addEventListener('scroll', function (e) { Home.scrollMenu(true); })
+    if(Home.logo) Home.logo.addEventListener('click', function (e) { Home.menuClick(e); })
+    if(Home.top) Home.top.addEventListener('click', function (e) { Home.backToTop(e); })
   },
   scrollMenu: (scroll) => {
     var logoWidth = Home.logo.clientWidth;
@@ -38,6 +38,12 @@ const Home = {
       Home.header.classList.add('header--open');
       if (Home.header.classList.contains('header--after')) Home.scrollMenu(false)
     }
+  },
+  backToTop: (e) => {
+    animateScrollTo(0, {
+      speed: 200,
+      element: Home.main
+    })
   }
 };
 

@@ -1,4 +1,5 @@
 .grid {
+    @extend .font-2;
     margin-bottom: 50vh;
 }
 
@@ -15,15 +16,15 @@
         max-height: 100vh;
     }
 
-    .grid__item.laboratory & {
+    .grid__item--laboratory & {
         width: 100%;
     }
 
-    .grid__item.spaces & {
+    .grid__item--spaces & {
         width: 50%;
     }
 
-    .grid__item.collection & {
+    .grid__item--collection & {
         width: 33%;
     }
 

@@ -34,13 +34,21 @@ $line-xxl:                                  2.0;      // (default: 3.0)
 $primary-font-family:                       'Blender-Thin';
 $primary-font-url:                          '../fonts/blender-thin';       // Without extension
 $primary-fallback:                          'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$secondary-font-family:                     '';
-$secondary-font-url:                        '';       // Without extension
-$secondary-fallback:                        Garamond, 'Hoefler Text', 'Times New Roman', Times, serif;
+$secondary-font-family:                     'Blenter-Outline';
+$secondary-font-url:                        '../fonts/BLCIRCUIT-Line';       // Without extension
+$secondary-fallback:                        'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $tertiary-font-family:                      '';
 $tertiary-font-url:                         '';       // Without extension
 $tertiary-fallback:                         'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 
+
+.font-1 {
+    font-family: $primary-font-family, $primary-fallback;
+}
+
+.font-2 {
+    font-family: $secondary-font-family, $secondary-fallback;
+}
 /*
 Fallbacks examples
  - 'Times New Roman', Times, serif
