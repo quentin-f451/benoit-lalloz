@@ -3,7 +3,7 @@
         {% assign category = post.categories[0] | strip %}
         <article class="grid__item grid__item--{{ category }}">
             <a href="{{ post.url }}">
-                <div class="grid__image">
+                <div class="grid__image grid__image--{{ post.thumb_orientation }}">
                     <img src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
                 </div>
             </a>

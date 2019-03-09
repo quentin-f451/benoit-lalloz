@@ -13,7 +13,10 @@
     img {
         max-width: 100%;
         width: auto;
-        max-height: 100vh;
+        
+        .grid__image--portrait & {
+            max-height: 100vh;
+        }
     }
 
     .grid__item--laboratory & {
@@ -24,7 +27,7 @@
         width: 50%;
     }
 
-    .grid__item--collection & {
+    .grid__item--collections & {
         width: 33%;
     }
 
