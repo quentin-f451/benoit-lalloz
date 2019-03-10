@@ -8,16 +8,32 @@
     z-index: 3;
     display: flex;
     flex-direction: column;
+    min-height: 1.5rem;
+
+    @include sm {
+        min-height: 1rem;
+    }
+
     &--transition {
         transition: $base-transition;
+    }
+
+    &--open {
+        min-height: 50vh;
+        transition: $base-transition;
+        transition-duration: .6s;
     }
 }
 
 .header__logo {
-    height: calc(1rem - #{$base-space} * 2);
+    height: calc(1.5rem - #{$base-space} * 2);
     display: inline-block;
     width: fit-content;
     cursor: pointer;
+
+    @include sm {
+        height: calc(1rem - #{$base-space} * 2);
+    }
     
     img {
         height: 100%;

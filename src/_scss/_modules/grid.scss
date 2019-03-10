@@ -11,6 +11,8 @@
 
 .grid__image {
 
+    width: 100%;
+
     a {
         display: inline-block;
         float: left;
@@ -28,21 +30,23 @@
         }
     }
 
-    .grid__item--laboratory & {
-        width: 100%;
-    }
+    @include sm {
+        .grid__item--laboratory & {
+            width: 100%;
+        }
+    
+        .grid__item--spaces & {
+            width: 50%;
+        }
+    
+        .grid__item--collections & {
+            width: 33%;
+        }
 
-    .grid__item--spaces & {
-        width: 50%;
-    }
-
-    .grid__item--collections & {
-        width: 33%;
-    }
-
-    &:hover {
-        img {
-            transform: scale(1.05);
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
         }
     }
 

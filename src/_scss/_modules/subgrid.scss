@@ -8,62 +8,72 @@ $laboratory-grid:   1;
 }
 
 .subgrid__row {
-    display: grid;
-    grid-column-gap: $base-space * 2;
+    display: flex;
+    flex-direction: column;
 
-    .subgrid--collections & {
-        grid-template-columns: repeat($collections-grid, 1fr);
-    }
+    @include sm {
+        display: grid;
+        grid-column-gap: $base-space * 2;
 
-    .subgrid--spaces & {
-        grid-template-columns: repeat($spaces-grid, 1fr);
-    }
-
-    .subgrid--laboratory & {
-        grid-template-columns: repeat($laboratory-grid, 1fr);
+        .subgrid--collections & {
+            grid-template-columns: repeat($collections-grid, 1fr);
+        }
+    
+        .subgrid--spaces & {
+            grid-template-columns: repeat($spaces-grid, 1fr);
+        }
+    
+        .subgrid--laboratory & {
+            grid-template-columns: repeat($laboratory-grid, 1fr);
+        }
     }
 }
 
 .subgrid__item {
 
     &--text {
-        grid-column-start: 1;
+        @include margin(0 0 2 0);
 
-        .subgrid--collections & {
-            order: $collections-grid + 1;
-            grid-column-end: $collections-grid + 1;
-        }
+        @include sm {
+            grid-column-start: 1;
 
-        .subgrid--spaces & {
-            order: $spaces-grid + 1;
-            grid-column-end: $spaces-grid + 1;
-        }
+            .subgrid--collections & {
+                order: $collections-grid + 1;
+                grid-column-end: $collections-grid + 1;
+            }
 
-        .subgrid--laboratory & {
-            order: $laboratory-grid + 1;
-            grid-column-end: $laboratory-grid + 1;
-        }
+            .subgrid--spaces & {
+                order: $spaces-grid + 1;
+                grid-column-end: $spaces-grid + 1;
+            }
 
-        &:last-of-type {
-            @include margin(0 0 2 0);
-        }
+            .subgrid--laboratory & {
+                order: $laboratory-grid + 1;
+                grid-column-end: $laboratory-grid + 1;
+            }
+
+            &:last-of-type {
+                @include margin(0 0 2 0);
+            }
+        }  
     }
 
     &--image {
         @include margin(0 0 2 0);
 
-        .subgrid--collections & {
-            height: calc(100vh - 4rem - 4px - 4 * #{$base-space});
+        @include sm {
+            .subgrid--collections & {
+                height: calc(100vh - 4rem - 4px - 4 * #{$base-space});
+            }
+    
+            .subgrid--spaces & {
+                height: calc(80vh - 3rem - 3px - 4 * #{$base-space});
+            }
+    
+            .subgrid--laboratory & {
+                height: calc(100vh - 2rem - 2px - 4 * #{$base-space});
+            }
         }
-
-        .subgrid--spaces & {
-            height: calc(80vh - 3rem - 3px - 4 * #{$base-space});
-        }
-
-        .subgrid--laboratory & {
-            height: calc(100vh - 2rem - 2px - 4 * #{$base-space});
-        }
-
     }
 }
 

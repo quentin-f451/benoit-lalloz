@@ -9,7 +9,9 @@ const Home = {
     Home.menu = document.querySelector('.js-menu');
     Home.top = document.querySelector('.js-top');
 
-    if(Home.main) Home.main.addEventListener('scroll', function (e) { Home.scrollMenu(true); })
+    if (window.matchMedia("(min-width: 576px)").matches) {
+      if(Home.main) Home.main.addEventListener('scroll', function (e) { Home.scrollMenu(true); })
+    };
     if(Home.logo) Home.logo.addEventListener('click', function (e) { Home.menuClick(e); })
     if(Home.top) Home.top.addEventListener('click', function (e) { Home.backToTop(e); })
   },
