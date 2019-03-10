@@ -8,10 +8,16 @@
         {% assign columns = 1 %}
     {% endif %}
 
-    {% assign posts = site.posts | where: "categories", include.type %}
+    {% if include.filter == nil %}
+        {% assign posts = site.posts | where: "categories", include.type %}
+    {% else %}
+        {% assign posts = site.posts | where: "categories", include.type | where: "filter", include.filter %}
+    {% endif %}
+
     {% for post in posts %}
 
-        {% assign category = post.categories[0] | strip %}    
+        {% assign category = post.categories[0] | strip %}  
+
         {% assign counter = forloop.index | modulo: columns %}
         {% if counter == 1 or columns == 1 %}<div class="subgrid__row">{% endif %}
             

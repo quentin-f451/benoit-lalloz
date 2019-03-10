@@ -3,6 +3,7 @@ layout: project
 title: Orcan
 categories: collections
 collec: Creatures
+filter: creatures
 year: 2013
 thumb: orcan-2.jpg
 thumb_orientation: portrait
