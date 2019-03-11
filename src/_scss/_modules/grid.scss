@@ -106,8 +106,15 @@ $laboratory-grid:   1;
     position: relative;
     opacity: 1;
     transition: $base-transition;
+    background: $background-color;
 
     &--hidden {
         opacity: 0;
+    }
+
+    @include sm {
+        &:hover {
+            background: white;
+        }
     }
 }
