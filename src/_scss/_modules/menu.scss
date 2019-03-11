@@ -45,4 +45,8 @@
             content: '.';
         }
     } 
+
+    &:hover a {
+        filter: blur(.8px);
+    }
 }

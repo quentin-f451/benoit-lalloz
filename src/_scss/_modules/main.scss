@@ -7,6 +7,16 @@ html, body {
       }
 }
 
+::selection {
+  color: $text-color;
+  background: white;
+}
+
+::-moz-selection {
+  color: $text-color;
+  background: white;
+}
+
 .main {
     &--blocked {
         overflow: hidden;
