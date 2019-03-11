@@ -1,0 +1,23 @@
+.player {
+    @include margin(2);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.player__element {
+    @include margin(0 0 0 4);
+    cursor: pointer;
+
+    svg {
+        height: 25px;
+        width: 20px;
+        fill: $background-color;
+    }
+
+    & > div:last-of-type {
+        display: none;
+    }
+}

@@ -32,6 +32,7 @@ $laboratory-grid:   1;
 .grid__item {
 
     width: 100%;
+    position: relative;
     
     &--laboratory, .grid--laboratory & {
         height: calc(100vw * 0.5625);

@@ -8,12 +8,19 @@ const Home = {
     Home.logo = document.querySelector('.js-logo');
     Home.menu = document.querySelector('.js-menu');
     Home.top = document.querySelector('.js-top');
+    Home.thumbs = document.querySelectorAll('.js-thumb');
 
     if (window.matchMedia("(min-width: 576px)").matches) {
-      if(Home.main) Home.main.addEventListener('scroll', function (e) { Home.scrollMenu(true); })
+      if (Home.main) Home.main.addEventListener('scroll', function (e) { Home.scrollMenu(true); })
+      if (Home.thumbs) {
+        Home.thumbs.forEach(thumb => {
+          thumb.addEventListener('mousemove', function(e) { Home.hoverThumb(e, this); })
+        });
+      }
     };
-    if(Home.logo) Home.logo.addEventListener('click', function (e) { Home.menuClick(e); })
-    if(Home.top) Home.top.addEventListener('click', function (e) { Home.backToTop(e); })
+    if (Home.logo) Home.logo.addEventListener('click', function (e) { Home.menuClick(e); })
+    if (Home.top) Home.top.addEventListener('click', function (e) { Home.backToTop(e); })
+
   },
   scrollMenu: (scroll) => {
     var logoWidth = Home.logo.clientWidth;
@@ -55,6 +62,15 @@ const Home = {
       speed: 200,
       element: Home.main
     })
+  },
+  hoverThumb: (e, element) => {
+    var width = element.clientWidth;
+    var numberOfImages = element.children.length;
+    var subdivision = width / numberOfImages;
+    var cursorPosition = e.layerX;
+    var imageNumber = Math.floor(cursorPosition / subdivision);
+    Array.from(element.children).forEach(img => { img.classList.add('thumb--hidden') });
+    element.children[imageNumber].classList.remove('thumb--hidden');
   }
 };
 

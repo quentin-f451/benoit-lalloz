@@ -1,15 +1,18 @@
 <article class="grid__item grid__item--image {% if include.category %}grid__item--{{ category }}{% endif %}">
     <a href="{{ post.url }}">
-        <div class="grid__image grid__image--{{ post.thumb_orientation }}">
+        <div class="grid__image grid__image--{{ post.thumb_orientation }} {% if post.thumb.size > 1 %}js-thumb{% endif %}">
             {% if post.thumb.size > 1 %}
-            {% for thumb in post.thumb reversed %}
-            <img class="thumb thumb--video" src="/assets/images/posts/{{ thumb }}" alt="{{ post.title }}">
+            {% for thumb in post.thumb %}
+            <img class="thumb thumb--video {% if forloop.first == false %}thumb--hidden{% endif %}" src="/assets/images/posts/{{ thumb }}" alt="{{ post.title }}">
             {% endfor %}
             {% else %}
             <img class="thumb thumb--simple" src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
             {% endif %}
         </div>
     </a>
+    {% if post.thumb.size > 1 %}
+        {% include player.liquid %}
+    {% endif %}
 </article>
 
 <article class="grid__item grid__item--text">

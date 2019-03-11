@@ -20,4 +20,8 @@
     .grid__image--portrait & {
         max-height: 100vh;
     }
+
+    &--hidden {
+        display: none;
+    }
 }
