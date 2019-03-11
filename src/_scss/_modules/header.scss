@@ -1,5 +1,5 @@
 .header {
-    @include padding(1 2);
+    @include padding(2);
     width: 100vw;
     position: fixed;
     top: 0;
@@ -8,11 +8,7 @@
     z-index: 3;
     display: flex;
     flex-direction: column;
-    min-height: 1.5rem;
-
-    @include sm {
-        min-height: 1rem;
-    }
+    min-height: .8em;
 
     &--transition {
         transition: $base-transition;
@@ -26,14 +22,10 @@
 }
 
 .header__logo {
-    height: calc(1.5rem - #{$base-space} * 2);
+    height: .8em;
     display: inline-block;
     width: fit-content;
     cursor: pointer;
-
-    @include sm {
-        height: calc(1rem - #{$base-space} * 2);
-    }
     
     img {
         height: 100%;

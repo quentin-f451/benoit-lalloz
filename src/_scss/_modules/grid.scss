@@ -3,6 +3,7 @@ $spaces-grid:       2;
 $laboratory-grid:   1;
 
 .grid {
+    @include margin(2 0);
     @extend .font-2;
     margin-bottom: 50vh;
 }
@@ -103,4 +104,10 @@ $laboratory-grid:   1;
     height: 100%;
     overflow: hidden;
     position: relative;
+    opacity: 1;
+    transition: $base-transition;
+
+    &--hidden {
+        opacity: 0;
+    }
 }

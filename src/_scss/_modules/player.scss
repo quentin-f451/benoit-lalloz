@@ -12,12 +12,16 @@
     cursor: pointer;
 
     svg {
-        height: 25px;
-        width: 20px;
+        height: 1em;
+        width: calc(1em * 0.75);
         fill: $background-color;
     }
 
-    & > div:last-of-type {
+    &--hidden {
         display: none;
     }
+}
+
+.button--hidden {
+    display: none;
 }

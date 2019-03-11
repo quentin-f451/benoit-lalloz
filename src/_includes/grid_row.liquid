@@ -9,6 +9,9 @@
             <img class="thumb thumb--simple" src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
             {% endif %}
         </div>
+        {% if post.thumb.size > 1 %}
+            {% include video.liquid %}
+        {% endif %}
     </a>
     {% if post.thumb.size > 1 %}
         {% include player.liquid %}
