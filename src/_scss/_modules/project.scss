@@ -4,11 +4,10 @@
 }
 
 .project__text {
-    @include margin(0 0 8 0);
+    @include margin(0 0 2 0);
 
     &--credits {
         @extend .font-2;
-        @include margin(2 0 0 0);
     }
 }
 
@@ -18,8 +17,6 @@
 }
 
 .project__image {
-    @include margin(0 0 2 0);
-
     img {
         max-height: 110vh;
         max-width: 100%;

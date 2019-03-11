@@ -29,11 +29,11 @@ const Home = {
       var scrollHeight = Home.main.scrollHeight - Home.main.clientHeight;
       var scrollTop = Home.main.scrollTop;
       var scrollPosition = scrollTop / scrollHeight;
-      var logoPosition = (headerWidth - logoWidth - 20) * scrollPosition;
+      var logoPosition = (headerWidth - logoWidth) * scrollPosition;
       logoPosition + 300 > headerWidth ? Home.header.classList.add('header--after') : Home.header.classList.remove('header--after');
-      Home.header.style.paddingLeft = logoPosition + 10 + 'px';
+      Home.header.style.paddingLeft = logoPosition + 'px';
     } else {
-      Home.header.style.paddingLeft = headerWidth - 310 + 'px';
+      Home.header.style.paddingLeft = headerWidth - 300 + 'px';
     }
   },
   menuClick: (e) => {

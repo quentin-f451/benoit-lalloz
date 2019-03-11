@@ -3,7 +3,6 @@ $spaces-grid:       2;
 $laboratory-grid:   1;
 
 .grid {
-    @include margin(2 0);
     @extend .font-2;
     margin-bottom: 50vh;
 }
@@ -14,7 +13,6 @@ $laboratory-grid:   1;
 
     @include sm {
         display: grid;
-        grid-column-gap: $base-space * 2;
 
         .grid--collections & {
             grid-template-columns: repeat($collections-grid, 1fr);
@@ -35,12 +33,11 @@ $laboratory-grid:   1;
     width: 100%;
     position: relative;
     
-    &--laboratory, .grid--laboratory & {
+    &--laboratory {
         height: calc(100vw * 0.5625);
     }
 
     &--text {
-        @include margin(0 0 2 0);
 
         @include sm {
             grid-column-start: 1;
@@ -67,20 +64,23 @@ $laboratory-grid:   1;
     }
 
     &--image {
-        @include margin(0 0 2 0);
 
         @include sm {
             .grid--collections & {
-                height: calc(100vh - 4rem - 4px - 4 * #{$base-space});
+                height: calc(100vh - 4rem - 4px);
             }
     
             .grid--spaces & {
-                height: calc(80vh - 3rem - 3px - 4 * #{$base-space});
+                height: calc(80vh - 3rem - 3px);
             }
     
             .grid--laboratory & {
-                height: calc(100vh - 2rem - 2px - 4 * #{$base-space});
+                height: calc(100vh - 2rem - 2px);
             }
+        }
+
+        .grid--laboratory & {
+            height: calc(100vw * 0.5625);
         }
     }
 

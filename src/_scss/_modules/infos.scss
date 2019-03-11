@@ -3,7 +3,6 @@
 }
 
 .infos__image {
-    @include margin(2 0);
     width: 75%;
 
     @include sm {
@@ -16,16 +15,16 @@
         display: none;
     }
 
-    p {
-        margin-top: 1em;
+    p:not(:first-of-type) {
+        margin-top: .5em;
     }
 }
 
 .infos__more {
     @extend .font-2;
-    @include margin(2 0 0 0);
     text-transform: uppercase;
     cursor: pointer;
+    margin-top: .5em;
 
     &::after {
         content: 'Lire moins';
