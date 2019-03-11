@@ -45,11 +45,4 @@
             content: '.';
         }
     } 
-
-    &:hover a {
-        background-size: 200% 1px;
-        background-position: 0 85%;
-        background-image: linear-gradient(to right, $text-color, $text-color 50%, transparent 50%, transparent);
-        background-repeat: no-repeat;
-    }
 }
