@@ -5,7 +5,8 @@ categories: collections
 collec: Micro-cities
 filter: micro-cities
 year: 2011
-thumb: little-city-2-2.jpg
+thumb: 
+    - little-city-2-2.jpg
 thumb_orientation: portrait
 slideshow:
     - Acne_Studios_West_Hollywood_Press_1A-2.jpg

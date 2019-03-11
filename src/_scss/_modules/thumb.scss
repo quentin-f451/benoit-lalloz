@@ -1,0 +1,23 @@
+.thumb {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    transition: transform .6s ease-in-out;
+    float: left;
+
+    &--video {
+        position: absolute;
+    }
+
+    &--simple {
+        @include sm {
+            .subgrid__image:hover &, .grid__image:hover & {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .grid__image--portrait & {
+        max-height: 100vh;
+    }
+}

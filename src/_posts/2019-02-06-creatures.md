@@ -5,7 +5,8 @@ categories: collections
 collec: Creatures
 filter: creatures
 year: 2013
-thumb: orcan-2.jpg
+thumb: 
+    - orcan-2.jpg
 thumb_orientation: portrait
 slideshow:
     - Acne_Studios_West_Hollywood_Press_1A-2.jpg

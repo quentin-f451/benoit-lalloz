@@ -1,4 +1,4 @@
-<section class="subgrid subgrid--{{ include.type }}">
+<section class="grid grid--{{ include.type }}">
 
     {% if include.type == 'collections' %}
         {% assign columns = 3 %}
@@ -19,18 +19,24 @@
         {% assign category = post.categories[0] | strip %}  
 
         {% assign counter = forloop.index | modulo: columns %}
-        {% if counter == 1 or columns == 1 %}<div class="subgrid__row">{% endif %}
+        {% if counter == 1 or columns == 1 %}<div class="grid__row">{% endif %}
             
-            <article class="subgrid__item subgrid__item--image">
+            <article class="grid__item grid__item--image">
                 <a href="{{ post.url }}">
-                    <div class="subgrid__image subgrid__image--{{ post.thumb_orientation }}">
-                        <img src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
+                    <div class="grid__image grid__image--{{ post.thumb_orientation }}">
+                        {% if post.thumb.size > 1 %}
+                            {% for thumb in post.thumb reversed %}
+                                <img class="thumb thumb--video" src="/assets/images/posts/{{ thumb }}" alt="{{ post.title }}">
+                            {% endfor %}
+                        {% else %}
+                            <img class="thumb thumb--simple" src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
+                        {% endif %}
                     </div>
                 </a>
             </article>
 
-            <article class="subgrid__item subgrid__item--text">
-                <div class="subgrid__text">
+            <article class="grid__item grid__item--text">
+                <div class="grid__text">
                     <a href="{{ post.url }}">
                         {% if category == 'spaces' %}
                             Spaces for {{ post.client }} in {{ post.place }}, {{ post.year }}.

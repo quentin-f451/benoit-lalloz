@@ -6,7 +6,8 @@ client: Balanciaga
 filter: balanciaga
 place: Los Angeles
 year: 2015
-thumb: balenciaga-milan-2-2.jpg
+thumb: 
+    - balenciaga-milan-2-2.jpg
 thumb_orientation: portrait
 slideshow:
     - Acne_Studios_West_Hollywood_Press_1A-2.jpg
