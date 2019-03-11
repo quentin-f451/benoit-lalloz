@@ -11,15 +11,16 @@
     }
 
     &--simple {
+        transform: scale(1.01);
         @include sm {
             .grid__image:hover & {
-                transform: scale(1.01);
+                transform: scale(1.02);
             }
         }
     }
 
     .grid__image--portrait & {
-        max-height: 100vh;
+        max-height: calc(100vh - #{$header-height});
     }
 
     &--hidden {

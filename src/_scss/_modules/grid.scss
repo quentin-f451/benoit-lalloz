@@ -38,8 +38,10 @@ $laboratory-grid:   1;
     }
 
     &--text {
+        @include margin(0 0 2 0);
 
         @include sm {
+            margin: 0;
             grid-column-start: 1;
 
             .grid--collections & {
@@ -60,10 +62,14 @@ $laboratory-grid:   1;
             &:last-of-type {
                 @include margin(0 0 2 0);
             }
-        }  
+        } 
+
     }
 
     &--image {
+        .grid--laboratory & {
+            height: calc(100vw * 0.5625);
+        }
 
         @include sm {
             .grid--collections & {
@@ -77,10 +83,6 @@ $laboratory-grid:   1;
             .grid--laboratory & {
                 height: calc(100vh - 2rem - 2px);
             }
-        }
-
-        .grid--laboratory & {
-            height: calc(100vw * 0.5625);
         }
     }
 
