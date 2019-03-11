@@ -2,33 +2,7 @@
     {% for post in site.posts %}
         {% assign category = post.categories[0] | strip %}
         <div class="grid__row">
-            <article class="grid__item grid__item--image grid__item--{{ category }}">
-                <a href="{{ post.url }}">
-                    <div class="grid__image grid__image--{{ post.thumb_orientation }}">
-                        {% if post.thumb.size > 1 %}
-                            {% for thumb in post.thumb reversed %}
-                                <img class="thumb thumb--video" src="/assets/images/posts/{{ thumb }}" alt="{{ post.title }}">
-                            {% endfor %}
-                        {% else %}
-                            <img class="thumb thumb--simple" src="/assets/images/posts/{{ post.thumb }}" alt="{{ post.title }}">
-                        {% endif %}
-                    </div>
-                </a>
-            </article>
-
-            <article class="grid__item grid__item--text">
-                <div class="grid__text">
-                    <a href="{{ post.url }}">
-                        {% if category == 'spaces' %}
-                            Spaces for {{ post.client }} in {{ post.place }}, {{ post.year }}.
-                        {% elsif category == 'collections' %}
-                            In {{ post.collec }} collection, {{ post.title }}, {{ post.year }}.
-                        {% else %}
-                            From our Laboratory, watch {{ post.title }}, {{ post.year }}.
-                        {% endif %}
-                    </a>
-                </div>
-            </article>
+            {% include grid_row.liquid category=true %}
         </div>
     {% endfor %}
 </section>
