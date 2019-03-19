@@ -2,7 +2,7 @@
 
 // FONT SIZES
 
-$text-default-px:                           40;       // Default font-size in px (default: 16px)
+$text-default-px:                           24;       // Default font-size in px (default: 16px)
 $line-height-default:                       0.9;     // Default line-height, relative to default font-size (default: 1.25)
 
 // Viewport values
@@ -31,8 +31,8 @@ $line-xxl:                                  2.0;      // (default: 3.0)
 
 // FONTS
 
-$primary-font-family:                       'Blender-Thin';
-$primary-font-url:                          '../fonts/blender-thin';       // Without extension
+$primary-font-family:                       'Blender-Book';
+$primary-font-url:                          '../fonts/blender-book';       // Without extension
 $primary-fallback:                          'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $secondary-font-family:                     'Blenter-Outline';
 $secondary-font-url:                        '../fonts/BLCIRCUIT-Line';       // Without extension
@@ -50,12 +50,6 @@ $tertiary-fallback:                         'Helvetica Neue', Helvetica, Arial, 
     font-family: $secondary-font-family, $secondary-fallback;
 }
 
-a {
-    @extend .font-2;
-    &:hover {
-        @extend .font-1;
-    }
-}
 /*
 Fallbacks examples
  - 'Times New Roman', Times, serif

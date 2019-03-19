@@ -5,10 +5,6 @@
 
 .project__text {
     @include margin(0 0 2 0);
-
-    &--credits {
-        @extend .font-2;
-    }
 }
 
 .project__images {
