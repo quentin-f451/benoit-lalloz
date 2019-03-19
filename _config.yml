@@ -9,9 +9,3 @@ destination: public
 sass:
   sass_dir: _scss
   style: compressed
-
-collections:
-  collections:
-    output: true
-  spaces:
-    output: true

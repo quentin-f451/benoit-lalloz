@@ -11,17 +11,16 @@
     .header--open & {
         opacity: 1;
     }
+
+    &:hover a {
+        filter: blur(.8px);
+    }
 }
 
 .menu__item {
     &--main {
         &::after {
             content: ':';
-        }
-
-        & a, &:hover a {
-            @extend .font-1;
-            cursor: pointer;
         }
     } 
 
@@ -33,10 +32,6 @@
         &:last-of-type::after {
             content: '.';
         }
-
-        & a, &:hover a {
-            cursor: pointer;
-        }
     }
 
     &--nochild {
@@ -44,8 +39,4 @@
             content: '.';
         }
     } 
-
-    &:hover a {
-        filter: blur(.8px);
-    }
 }

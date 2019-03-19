@@ -20,10 +20,12 @@
 }
 
 .header__logo {
+    @extend .font-2;
     height: $header-height;
     display: inline-block;
     width: fit-content;
     cursor: pointer;
+    text-transform: uppercase;
     
     img {
         height: 100%;
