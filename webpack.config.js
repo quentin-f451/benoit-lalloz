@@ -8,7 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 /////////////////////////////////////////////////////////////////////////
 
-const localhost = 'http://test:8888'; // Server address as setup in MAMP
+const localhost = 'http://lalloz:8888'; // Server address as setup in MAMP
 
 /////////////////////////////////////////////////////////////////////////
 
