@@ -1,0 +1,131 @@
+title: Projet
+icon: image
+num: zero
+status:
+  draft:
+    label: Brouillon
+    text: Le projet n'est pas en ligne et peut seulement être modifié par les éditeurs.
+  unlisted:
+    label: Invisible
+    text: Le projet est en ligne mais ne dispose pas d'une page projet à proprement parler.
+  listed:
+    label: Visible
+    text: Le projet est en ligne et dispose d'une page dédiée.
+
+#-----------------------------------------------------------------------------------
+
+# 1. PROJETS
+	
+#----------------------------------------------------------------------------------
+
+tabs:
+
+#-- 1. FEEDS
+  
+  feeds:
+    label: Feeds
+    icon: dashboard
+    columns:
+
+      - width: 1/3
+        sections: 
+          projetCategorie:
+            type: fields
+            fields:
+              categorie:
+                label: Catégorie(s) du projet
+                type: checkboxes
+                search: false
+                options:
+                  spaces: Spaces
+                  collections: Collections
+                  laboratory: Laboratory
+
+      - width: 2/3
+        sections:
+          projetFeeds:
+            type: fields
+            fields: 
+              feedHome:
+                extends: fields/toggle
+                label: Dans le feed d'accueil?
+                width: 1/1
+              feedSpaces:
+                extends: fields/toggle
+                label: Dans le feed Spaces?
+              feedCollections:
+                extends: fields/toggle
+                label: Dans le feed Collections?
+              feedLaboratory:
+                extends: fields/toggle
+                label: Dans le feed Laboratory?
+
+
+#-- 2. INFORMATIONS
+  
+  informations:
+    label: Informations
+    icon: text
+    columns:
+
+      - width: 1/3
+        sections:
+          projetDatas:
+            type: fields
+            fields:
+              lieu:
+                label: Lieu
+                type: text
+                icon: globe
+              year:
+                label: Année
+                type: number
+                min: 1990
+                max: 2050
+                icon: calendar
+              client:
+                label: Client
+                type: select
+                options: query
+                query: site.clients.split
+              collection:
+                label: Collections
+                type: select
+                options: query
+                query: site.collections.split
+              legendeAuto:
+                label: Légende automatique?
+                type: toggle
+                default: true
+                text:
+                  - Légende manuelle
+                  - Légende automatique
+
+      - width: 2/3
+        sections:
+          projetTexts:
+            type: fields
+            fields:
+              legende:
+                label: Légende
+                type: text
+                when:
+                  legendeAuto: false
+              projetText:
+                label: Description du projet
+                type: markdown
+              credits:
+                label: Crédits photographiques
+                type: markdown
+
+
+#-- 3. GALERIE D'IMAGES
+
+  galerie:
+    label: Galerie
+    icon: image
+    sections:
+      projetGalerie:
+        headline: Galerie
+        extends: sections/galerie
+

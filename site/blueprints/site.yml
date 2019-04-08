@@ -1,51 +1,125 @@
+### PAGE D'ACCUEIL
+
 title: Site
 
+#-----------------------------------------------------------------------------------
+
+# 1. PROJETS
+# 2. FEEDS
+# 3. INFORMATIONS
+	
+#-----------------------------------------------------------------------------------
+
 tabs:
-  
-  # Seo Tab
-  seo:
-    label: SEO
-    icon: search
+
+#-- 1. PROJETS
+
+  projets:
+    label: Projets
+    icon: image
+    sections:
+      projetsListed:
+        type: pagetable
+        headline: Projets
+        template: projet
+        status: all
+        image:
+          cover: true
+        columns:
+          title:
+            label: Titre
+            text: '{{ page.title }}'
+            width: 1/2
+          category:
+            label: Catégorie
+            text: '{{ page.categorie.toCategory }}'
+            width: 1/6
+          client:
+            label: Client
+            text: '{{ page.client.toClient }}'
+            width: 1/6
+          collection:
+            label: Collection
+            text: '{{ page.collection.toCollection }}'
+            width: 1/6
+
+      projetsDatas:
+        type: fields
+        fields:
+          line-a:
+            type: line
+
+          clients:
+            type: tags
+            label: Clients
+            width: 1/2
+          collections: 
+            type: tags
+            label: Collections
+            width: 1/2
+    
+
+#-- 2. FEEDS
+
+  feeds:
+    label: Feeds
+    icon: dashboard
+    sections:
+      feedsListed:
+        sortable: false
+        extends: sections/pagelist
+        headline: Feeds de projets
+        template: feeds
+        status: listed
+        min: 4
+        max: 4
+            
+
+#-- 3. INFORMATIONS
+
+  informations:
+    label: Informations
+    icon: quote
     columns:
+
       - width: 2/3
         sections:
-          seoContent:
+          infosTexts:
             type: fields
             fields:
-              metaTitle:
-                label: Meta Title
-                type: text
-                required: true
-              metaDescription:
-                label: Meta Description
-                type: textarea
-                buttons: false
-                required: true
+              presentation:
+                type: markdown
+                label: Présentation
 
       - width: 1/3
         sections:
-          seoImage:
+          infosContact:
+            type: fields
+            fields:
+              email:
+                type: email
+                label: Adresse email
+              instagram:
+                label: Compte Instagram
+                type: text
+                icon: instagram
+                before: "@"
+          
+          contactImage:
             type: files
-            headline: Social networks image
-            min: 1
-            max: 1
-            required: true
-            template: seo
+            headline: Image Benoit Lalloz
             layout: cards
-            info: "{{ file.dimensions }}"
-            image:
-              ratio: 3/2
-              cover: true
+            template: cover
+            max: 1
+            image: 
+              back: white
 
-          favicon:
+          logotype:
             type: files
-            headline: Favicon
-            min: 1
-            max: 1
-            required: true
-            template: favicon
+            headline: Logotype BL
             layout: cards
-            info: "{{ file.dimensions }}"
-            image:
-              ratio: 1/1
-              cover: true
+            template: logotype
+            max: 1
+            image: 
+              back: white
+            

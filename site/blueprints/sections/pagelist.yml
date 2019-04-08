@@ -1,0 +1,4 @@
+type: pages
+image:
+  query: page.images.template('cover').first
+  cover: true

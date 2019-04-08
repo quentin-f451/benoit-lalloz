@@ -1,0 +1,10 @@
+type: files
+headline: Galerie
+layout: cards
+info: "{{ file.dimensions }}"
+size: small
+template: galerie
+image:
+  cover: true
+  ratio: 3/2
+  back: white
