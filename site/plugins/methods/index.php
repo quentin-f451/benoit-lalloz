@@ -5,12 +5,15 @@ Kirby::plugin('quentincrzt/methods', [
         'toCategory' => function($field) {
           $value = $field->value;
           $splittedValues = explode(", ", $value);
-          $allValues = "";
+		  $allValues = "";
+		  
           foreach ($splittedValues as $val) :
             $allValues .= '<span class="category-label" data-category="'. $val .'">' . $val . '</span>';
-          endforeach;
+		  endforeach;
+		  
           return $allValues;
 		},
+		
 		'toCaption' => function ($field) {
 			$value = $field->value;
 			$projet = $field->model();

@@ -1,17 +1,14 @@
-title: Feeds
-icon: dashboard
-options:
-  url: false
-  status: false
-  delete: false
-
 #-----------------------------------------------------------------------------------
 
 # 1. PROJETS
 	
 #----------------------------------------------------------------------------------
 
-sections:
+fields:
   feeds:
-    type: feeds
-
+    type: pages
+    query: site.children.template('projet').filterBy("feedhome", true)
+    layout: cards
+    text: '{{ page.legendeAuto.toCaption }}'
+    image:
+      back: white

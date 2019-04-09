@@ -2,6 +2,12 @@ Title: Homepage
 
 ----
 
+Feeds: 
+
+- acne-studios-berlin
+
+----
+
 Text: 
 
 ----

@@ -119,83 +119,83 @@ tabs:
       projetFeeds:
         type: fields
         fields: 
-          feedHome:
+          feedhome:
             extends: fields/toggle
             label: Dans le feed d'accueil?
-          feedHomeType:
+          feedhometype:
             extends: fields/togglevideo
             when: 
-              feedHome: true
-          feedHomeImage:
+              feedhome: true
+          feedhomeimage:
             extends: fields/imagefeed
             when: 
-              feedHomeType: false
-              feedHome: true
-          feedHomeVimeo:
+              feedhometype: false
+              feedhome: true
+          feedhomevimeo:
             extends: fields/vimeo
             when: 
-              feedHomeType: true
-              feedHome: true
+              feedhometype: true
+              feedhome: true
 
           line-a:
             type: line
 
-          feedSpaces:
+          feedspaces:
             extends: fields/toggle
             label: Dans le feed Spaces?
-          feedSpacesType:
+          feedspacestype:
             extends: fields/togglevideo
             when: 
-              feedSpaces: true
-          feedSpacesImage:
+              feedspaces: true
+          feedspacesimage:
             extends: fields/imagefeed
             when: 
-              feedSpacesType: false
-              feedSpaces: true
-          feedSpacesVimeo:
+              feedspacestype: false
+              feedspaces: true
+          feedspacesvimeo:
             extends: fields/vimeo
             when: 
-              feedSpacesType: true
-              feedSpaces: true
+              feedspacestype: true
+              feedspaces: true
 
           line-b:
             type: line
 
-          feedCollections:
+          feedcollections:
             extends: fields/toggle
             label: Dans le feed Collections?
-          feedCollectionsType:
+          feedcollectionstype:
             extends: fields/togglevideo
             when: 
-              feedCollections: true
-          feedCollectionsImage:
+              feedcollections: true
+          feedcollectionsimage:
             extends: fields/imagefeed
             when: 
-              feedCollectionsType: false
-              feedCollections: true
-          feedCollectionsVimeo:
+              feedcollectionstype: false
+              feedcollections: true
+          feedcollectionsvimeo:
             extends: fields/vimeo
             when: 
-              feedCollectionsType: true
-              feedCollections: true
+              feedcollectionstype: true
+              feedcollections: true
 
           line-c:
             type: line
 
-          feedLaboratory:
+          feedlaboratory:
             extends: fields/toggle
             label: Dans le feed Laboratory?
-          feedLaboratoryType:
+          feedlaboratorytype:
             extends: fields/togglevideo
             when: 
-              feedLaboratory: true
-          feedLaboratoryImage:
+              feedlaboratory: true
+          feedlaboratoryimage:
             extends: fields/imagefeed
             when: 
-              feedLaboratoryType: false
-              feedLaboratory: true
-          feedLaboratoryVimeo:
+              feedlaboratorytype: false
+              feedlaboratory: true
+          feedlaboratoryvimeo:
             extends: fields/vimeo
             when: 
-              feedLaboratoryType: true
-              feedLaboratory: true
+              feedlaboratorytype: true
+              feedlaboratory: true

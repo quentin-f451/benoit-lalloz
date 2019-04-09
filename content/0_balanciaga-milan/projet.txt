@@ -1,28 +1,28 @@
-Title: Acne Studios Munich
+Title: Balanciaga Milan
 
 ----
 
-Categorie: spaces
+Categorie: spaces, collections
 
 ----
 
-Lieu: Munich
+Lieu: Milan
 
 ----
 
-Year: 2018
+Year: 2010
 
 ----
 
-Client: Acne Studios
+Client: Balenciaga
 
 ----
 
-Collection: 
+Collection: Radiators
 
 ----
 
-Titleincollection: 
+Titleincollection: Satellites
 
 ----
 
@@ -52,7 +52,7 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-acne-studios-munich-1.jpg
+- benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 
@@ -70,7 +70,7 @@ Feedspacestype: false
 
 Feedspacesimage: 
 
-- benoit-lalloz-acne-studios-munich-1.jpg
+- benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 
@@ -78,7 +78,7 @@ Feedspacesvimeo:
 
 ----
 
-Feedcollections: false
+Feedcollections: true
 
 ----
 
@@ -87,6 +87,8 @@ Feedcollectionstype: false
 ----
 
 Feedcollectionsimage: 
+
+- benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 

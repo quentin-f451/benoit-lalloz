@@ -1,0 +1,16 @@
+title: Laboratory
+icon: dashboard
+options:
+  url: false
+  status: false
+  delete: false
+  
+extends: layouts/feeds
+
+fields:
+  feeds:
+    label: Laboratory
+    query: site.children.template('projet').filterBy('feedlaboratory', '*=', 'true')
+    size: medium
+    image:
+      query: page.feedlaboratoryimage.toFile

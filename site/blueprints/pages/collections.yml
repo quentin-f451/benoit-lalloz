@@ -1,0 +1,16 @@
+title: Collections
+icon: dashboard
+options:
+  url: false
+  status: false
+  delete: false
+
+extends: layouts/feeds
+
+fields:
+  feeds:
+    label: Collections
+    query: site.children.template('projet').filterBy('feedcollections', '*=', 'true')
+    size: tiny
+    image:
+      query: page.feedcollectionsimage.toFile

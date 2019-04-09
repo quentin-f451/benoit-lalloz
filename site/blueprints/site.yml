@@ -31,7 +31,7 @@ tabs:
             text: '{{ page.title }}'
             width: 1/4
           category:
-            label: Catégorie
+            label: Catégorie(s)
             text: '{{ page.categorie.toCategory }}'
             width: 1/4
           legende:
@@ -65,7 +65,11 @@ tabs:
         sortable: false
         extends: sections/pagelist
         headline: Feeds de projets
-        template: feeds
+        templates:
+          - homepage
+          - collections
+          - spaces
+          - laboratory
         status: listed
         min: 4
         max: 4

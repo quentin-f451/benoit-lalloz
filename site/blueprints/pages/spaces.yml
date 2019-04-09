@@ -1,0 +1,16 @@
+title: Laboratory
+icon: dashboard
+options:
+  url: false
+  status: false
+  delete: false
+  
+extends: layouts/feeds
+
+fields:
+  feeds:
+    label: Spaces
+    query: site.children.template('projet').filterBy('feedspaces', '*=', 'true')
+    size: small
+    image:
+      query: page.feedspacesimage.toFile
