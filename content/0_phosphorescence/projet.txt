@@ -1,0 +1,109 @@
+Title: Phosphorescence
+
+----
+
+Categorie: laboratory
+
+----
+
+Lieu: 
+
+----
+
+Year: 2012
+
+----
+
+Client: 
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: 
+
+----
+
+Feedhome: true
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-phosphorescence-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: true
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+- benoit-lalloz-phosphorescence-5.jpg
+
+----
+
+Feedlaboratoryvimeo: 

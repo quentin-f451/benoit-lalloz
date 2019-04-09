@@ -1,0 +1,111 @@
+Title: Balanciaga London
+
+----
+
+Categorie: spaces, collections
+
+----
+
+Lieu: London
+
+----
+
+Year: 2013
+
+----
+
+Client: Balenciaga
+
+----
+
+Collection: Radiators
+
+----
+
+Titleincollection: Spaceships
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: 
+
+----
+
+Feedhome: true
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-balenciaga-london-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+- benoit-lalloz-balenciaga-london-1.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: true
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+- benoit-lalloz-spaceship-london-3.jpg
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

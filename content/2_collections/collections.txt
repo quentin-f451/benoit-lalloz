@@ -2,4 +2,11 @@ Title: Collections
 
 ----
 
+Feeds: 
+
+- balanciaga-milan
+- nanosatellites
+
+----
+
 Text: 

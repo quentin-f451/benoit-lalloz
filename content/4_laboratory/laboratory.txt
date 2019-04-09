@@ -2,4 +2,11 @@ Title: Laboratory
 
 ----
 
+Feeds: 
+
+- phosphorescence
+- incandescence
+
+----
+
 Text: 

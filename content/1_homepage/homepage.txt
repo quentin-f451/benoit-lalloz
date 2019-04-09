@@ -5,6 +5,11 @@ Title: Homepage
 Feeds: 
 
 - acne-studios-berlin
+- acne-studios-munich
+- balanciaga-milan
+- nanosatellites
+- phosphorescence
+- incandescence
 
 ----
 
