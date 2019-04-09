@@ -1,0 +1,109 @@
+Title: Acne Studios Munich
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: Munich
+
+----
+
+Year: 2018
+
+----
+
+Client: Acne Studios
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: 
+
+----
+
+Feedhome: false
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 
+
+----
+
+Legende: 

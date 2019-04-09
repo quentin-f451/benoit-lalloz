@@ -14,54 +14,15 @@ status:
 
 #-----------------------------------------------------------------------------------
 
-# 1. PROJETS
+# 1. INFORMATIONS
+# 2. GALERIE D'IMAGES
+# 3. FEEDS
 	
 #----------------------------------------------------------------------------------
 
 tabs:
 
-#-- 1. FEEDS
-  
-  feeds:
-    label: Feeds
-    icon: dashboard
-    columns:
-
-      - width: 1/3
-        sections: 
-          projetCategorie:
-            type: fields
-            fields:
-              categorie:
-                label: Catégorie(s) du projet
-                type: checkboxes
-                search: false
-                options:
-                  spaces: Spaces
-                  collections: Collections
-                  laboratory: Laboratory
-
-      - width: 2/3
-        sections:
-          projetFeeds:
-            type: fields
-            fields: 
-              feedHome:
-                extends: fields/toggle
-                label: Dans le feed d'accueil?
-                width: 1/1
-              feedSpaces:
-                extends: fields/toggle
-                label: Dans le feed Spaces?
-              feedCollections:
-                extends: fields/toggle
-                label: Dans le feed Collections?
-              feedLaboratory:
-                extends: fields/toggle
-                label: Dans le feed Laboratory?
-
-
-#-- 2. INFORMATIONS
+#-- 1. INFORMATIONS
   
   informations:
     label: Informations
@@ -73,6 +34,14 @@ tabs:
           projetDatas:
             type: fields
             fields:
+              categorie:
+                label: Catégorie(s) du projet
+                type: checkboxes
+                search: false
+                options:
+                  spaces: Spaces
+                  collections: Collections
+                  laboratory: Laboratory
               lieu:
                 label: Lieu
                 type: text
@@ -93,24 +62,35 @@ tabs:
                 type: select
                 options: query
                 query: site.collections.split
-              legendeAuto:
-                label: Légende automatique?
-                type: toggle
-                default: true
-                text:
-                  - Légende manuelle
-                  - Légende automatique
+              titleInCollection:
+                label: Titre du luminaire
+                type: text
 
       - width: 2/3
         sections:
           projetTexts:
             type: fields
             fields:
-              legende:
+              legendeAuto:
+                label: Légende automatique?
+                type: toggle
+                default: true
+                text:
+                  - Manuelle
+                  - Automatique
+                width: 1/3
+              legendeAutomatique:
+                label: Légende
+                type: legendeauto
+                when:
+                  legendeAuto: true
+                width: 2/3
+              legendeManuelle:
                 label: Légende
                 type: text
                 when:
                   legendeAuto: false
+                width: 2/3
               projetText:
                 label: Description du projet
                 type: markdown
@@ -119,7 +99,7 @@ tabs:
                 type: markdown
 
 
-#-- 3. GALERIE D'IMAGES
+#-- 2. GALERIE D'IMAGES
 
   galerie:
     label: Galerie
@@ -129,3 +109,93 @@ tabs:
         headline: Galerie
         extends: sections/galerie
 
+
+#-- 3. FEEDS
+  
+  feeds:
+    label: Feeds
+    icon: dashboard
+    sections:
+      projetFeeds:
+        type: fields
+        fields: 
+          feedHome:
+            extends: fields/toggle
+            label: Dans le feed d'accueil?
+          feedHomeType:
+            extends: fields/togglevideo
+            when: 
+              feedHome: true
+          feedHomeImage:
+            extends: fields/imagefeed
+            when: 
+              feedHomeType: false
+              feedHome: true
+          feedHomeVimeo:
+            extends: fields/vimeo
+            when: 
+              feedHomeType: true
+              feedHome: true
+
+          line-a:
+            type: line
+
+          feedSpaces:
+            extends: fields/toggle
+            label: Dans le feed Spaces?
+          feedSpacesType:
+            extends: fields/togglevideo
+            when: 
+              feedSpaces: true
+          feedSpacesImage:
+            extends: fields/imagefeed
+            when: 
+              feedSpacesType: false
+              feedSpaces: true
+          feedSpacesVimeo:
+            extends: fields/vimeo
+            when: 
+              feedSpacesType: true
+              feedSpaces: true
+
+          line-b:
+            type: line
+
+          feedCollections:
+            extends: fields/toggle
+            label: Dans le feed Collections?
+          feedCollectionsType:
+            extends: fields/togglevideo
+            when: 
+              feedCollections: true
+          feedCollectionsImage:
+            extends: fields/imagefeed
+            when: 
+              feedCollectionsType: false
+              feedCollections: true
+          feedCollectionsVimeo:
+            extends: fields/vimeo
+            when: 
+              feedCollectionsType: true
+              feedCollections: true
+
+          line-c:
+            type: line
+
+          feedLaboratory:
+            extends: fields/toggle
+            label: Dans le feed Laboratory?
+          feedLaboratoryType:
+            extends: fields/togglevideo
+            when: 
+              feedLaboratory: true
+          feedLaboratoryImage:
+            extends: fields/imagefeed
+            when: 
+              feedLaboratoryType: false
+              feedLaboratory: true
+          feedLaboratoryVimeo:
+            extends: fields/vimeo
+            when: 
+              feedLaboratoryType: true
+              feedLaboratory: true

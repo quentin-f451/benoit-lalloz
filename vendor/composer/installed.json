@@ -560,6 +560,42 @@
         "description": "Display subpages in a flexible table"
     },
     {
+        "name": "sylvainjule/quickpages",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sylvainjule/kirby-quickpages.git",
+            "reference": "1ba1403a19e795fba74a54af0c1a41d5ddd723b7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sylvainjule/kirby-quickpages/zipball/1ba1403a19e795fba74a54af0c1a41d5ddd723b7",
+            "reference": "1ba1403a19e795fba74a54af0c1a41d5ddd723b7",
+            "shasum": ""
+        },
+        "require": {
+            "getkirby/composer-installer": "^1.1"
+        },
+        "time": "2019-03-28T11:42:49+00:00",
+        "type": "kirby-plugin",
+        "extra": {
+            "installer-name": "quickpages"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Sylvain Julé",
+                "email": "contact@sylvain-jule.fr"
+            }
+        ],
+        "description": "Quickly filter the Pages field's dialog"
+    },
+    {
         "name": "symfony/polyfill-mbstring",
         "version": "v1.11.0",
         "version_normalized": "1.11.0.0",

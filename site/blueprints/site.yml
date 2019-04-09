@@ -29,19 +29,15 @@ tabs:
           title:
             label: Titre
             text: '{{ page.title }}'
-            width: 1/2
+            width: 1/4
           category:
             label: Catégorie
             text: '{{ page.categorie.toCategory }}'
-            width: 1/6
-          client:
-            label: Client
-            text: '{{ page.client.toClient }}'
-            width: 1/6
-          collection:
-            label: Collection
-            text: '{{ page.collection.toCollection }}'
-            width: 1/6
+            width: 1/4
+          legende:
+            label: Légende
+            text: '{{ page.legendeAuto.toCaption }}'
+            width: 1/2
 
       projetsDatas:
         type: fields

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad48487e375b1de340b807298aa98623",
+    "content-hash": "1dba9b685cfc54dcc66317eec14e371f",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -543,6 +543,40 @@
             ],
             "description": "Display subpages in a flexible table",
             "time": "2019-03-18T10:55:39+00:00"
+        },
+        {
+            "name": "sylvainjule/quickpages",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sylvainjule/kirby-quickpages.git",
+                "reference": "1ba1403a19e795fba74a54af0c1a41d5ddd723b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sylvainjule/kirby-quickpages/zipball/1ba1403a19e795fba74a54af0c1a41d5ddd723b7",
+                "reference": "1ba1403a19e795fba74a54af0c1a41d5ddd723b7",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "quickpages"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                }
+            ],
+            "description": "Quickly filter the Pages field's dialog",
+            "time": "2019-03-28T11:42:49+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

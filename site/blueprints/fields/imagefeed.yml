@@ -1,0 +1,6 @@
+type: files
+label: Sélectionner l'image
+multiple: false
+width: 1/2
+image:
+  cover: true

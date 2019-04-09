@@ -1,0 +1,7 @@
+type: toggle
+width: 1/4
+label: Type de media
+default: Image
+text:
+  - Image
+  - Vidéo

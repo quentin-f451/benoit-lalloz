@@ -1,5 +1,4 @@
 title: Feeds
-preset: page
 icon: dashboard
 options:
   url: false
@@ -12,5 +11,7 @@ options:
 	
 #----------------------------------------------------------------------------------
 
-fields:
+sections:
+  feeds:
+    type: feeds
 

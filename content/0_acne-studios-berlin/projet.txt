@@ -6,22 +6,6 @@ Categorie: spaces
 
 ----
 
-Feedhome: true
-
-----
-
-Feedspaces: true
-
-----
-
-Feedcollections: false
-
-----
-
-Feedlaboratory: false
-
-----
-
 Lieu: Berlin
 
 ----
@@ -38,11 +22,15 @@ Collection:
 
 ----
 
+Titleincollection: 
+
+----
+
 Legendeauto: true
 
 ----
 
-Legende: 
+Legendemanuelle: 
 
 ----
 
@@ -51,3 +39,75 @@ Projettext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus 
 ----
 
 Credits: © Helene Chapeau
+
+----
+
+Feedhome: true
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-acne-studios-berlin-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+- benoit-lalloz-acne-studios-berlin-1.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 
+
+----
+
+Legende: 
