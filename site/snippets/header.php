@@ -8,9 +8,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>
-    <?= $site->metaTitle() ?>
-  </title>
+  <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
   <meta name="author" content="">
   <meta name="description" content="<?= $site->metaDescription() ?>">
@@ -57,3 +55,11 @@
 </head>
 
 <body>
+
+  <div class="header js-header">
+    <div class="header__logo js-logo">benoitlalloz</div>
+    <?php snippet('menu') ?>
+  </div>
+  
+  <main class="main">
+    <div class="content home js-content">

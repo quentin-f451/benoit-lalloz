@@ -6,9 +6,11 @@
 
 fields:
   feeds:
-    type: pages
+    type: quickpages
     query: site.children.template('projet').filterBy("feedhome", true)
     layout: cards
-    text: '{{ page.legendeAuto.toCaption }}'
+    default: 
+      - lalloz
+    size: small
     image:
       back: white

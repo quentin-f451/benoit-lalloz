@@ -36,7 +36,7 @@ tabs:
             width: 1/4
           legende:
             label: Légende
-            text: '{{ page.legendeAuto.toCaption }}'
+            text: '{{ page.legendeAuto.toCaption("home") }}'
             width: 1/2
 
       projetsDatas:
@@ -62,7 +62,6 @@ tabs:
     icon: dashboard
     sections:
       feedsListed:
-        sortable: false
         extends: sections/pagelist
         headline: Feeds de projets
         templates:
@@ -70,9 +69,10 @@ tabs:
           - collections
           - spaces
           - laboratory
+          - info
         status: listed
-        min: 4
-        max: 4
+        min: 5
+        max: 5
             
 
 #-- 3. INFORMATIONS

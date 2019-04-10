@@ -25,7 +25,7 @@ tabs:
 #-- 1. INFORMATIONS
   
   informations:
-    label: Informations
+    label: 1. Informations
     icon: text
     columns:
 
@@ -102,7 +102,7 @@ tabs:
 #-- 2. GALERIE D'IMAGES
 
   galerie:
-    label: Galerie
+    label: 2. Galerie d'images
     icon: image
     sections:
       projetGalerie:
@@ -113,7 +113,7 @@ tabs:
 #-- 3. FEEDS
   
   feeds:
-    label: Feeds
+    label: 3. Feeds
     icon: dashboard
     sections:
       projetFeeds:

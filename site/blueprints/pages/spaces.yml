@@ -1,4 +1,4 @@
-title: Laboratory
+title: Spaces
 icon: dashboard
 options:
   url: false
@@ -11,6 +11,6 @@ fields:
   feeds:
     label: Spaces
     query: site.children.template('projet').filterBy('feedspaces', '*=', 'true')
-    size: small
+    text: '{{ page.legendeAuto.toCaption("spaces") }}'
     image:
       query: page.feedspacesimage.toFile

@@ -11,6 +11,6 @@ fields:
   feeds:
     label: Laboratory
     query: site.children.template('projet').filterBy('feedlaboratory', '*=', 'true')
-    size: medium
+    text: '{{ page.legendeAuto.toCaption("laboratory") }}'
     image:
       query: page.feedlaboratoryimage.toFile

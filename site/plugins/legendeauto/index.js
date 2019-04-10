@@ -1,4 +1,4 @@
-panel.plugin('quentincrzt/legendeauto', {
+panel.plugin('quentin-f451/legendeauto', {
 	'fields': {
 		'legendeauto': {
 			props: {

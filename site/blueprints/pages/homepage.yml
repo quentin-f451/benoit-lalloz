@@ -11,6 +11,6 @@ fields:
   feeds:
     label: Homepage
     query: site.children.template('projet').filterBy('feedhome', '*=', 'true')
-    size: tiny
+    text: '{{ page.legendeAuto.toCaption("home") }}'
     image:
       query: page.feedhomeimage.toFile
