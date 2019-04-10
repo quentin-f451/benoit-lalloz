@@ -8,6 +8,18 @@
 
 // IMPORT PARTIALS
 @import "_base/_partials/_mediaqueries";  // Initiate mediaqueries
+@mixin to($device-width) {
+    @media screen and (max-width: $device-width) {
+        @content;
+    }
+}
+
+@mixin to-sm {
+    @include to($screen-sm) {
+        @content;
+    }
+}
+
 @import "_base/_partials/_base";          // Initiate basic elements
 @import "_base/_partials/_fonts";         // Initiate fonts
 @import "_base/_partials/_grid";          // Initiate grid
