@@ -14,6 +14,7 @@ Feeds:
 - phosphorescence
 - snake
 - incandescence
+- lalloz
 
 ----
 

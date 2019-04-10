@@ -10,6 +10,7 @@ Feeds:
 - balanciaga-milan
 - balenciaga-musee-des-arts-decoratifs
 - snake
+- lalloz
 
 ----
 
