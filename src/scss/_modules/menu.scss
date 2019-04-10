@@ -1,0 +1,52 @@
+.menu {
+    @include margin(2 0 0 0);
+    width: 300px;
+    display: none;
+}
+
+.menu__section {
+    opacity: 0;
+    transition: $base-transition;
+
+    .header--open & {
+        opacity: 1;
+    }
+
+    @include sm {
+        &:hover a {
+            filter: blur($blur-size);
+            color: grey;
+        }
+    } 
+
+    &:not(:last-of-type) {
+        @include margin(0 0 2 0);
+        @include sm {
+            margin: 0;
+        }
+    }
+}
+
+.menu__item {
+    &--main {
+        &::after {
+            content: ':';
+        }
+    } 
+
+    &--sub {
+        &::after {
+            content: ',';
+        }
+
+        &:last-of-type::after {
+            content: '.';
+        }
+    }
+
+    &--nochild {
+        &::after {
+            content: '.';
+        }
+    } 
+}

@@ -1,0 +1,111 @@
+Title: Balenciaga, Musée des Arts Décoratifs
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: Musée des Arts Décoratifs, Paris
+
+----
+
+Year: 2015
+
+----
+
+Client: Exhibitions
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: 
+
+----
+
+Feedhome: true
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- >
+  benoit-lalloz-balenciaga-exhibition-7.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+- >
+  benoit-lalloz-balenciaga-exhibition-2.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

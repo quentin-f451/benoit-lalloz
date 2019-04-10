@@ -1,0 +1,109 @@
+Title: Disque solaire
+
+----
+
+Categorie: collections
+
+----
+
+Lieu: Paris
+
+----
+
+Year: 2011
+
+----
+
+Client: 
+
+----
+
+Collection: Micro-cities
+
+----
+
+Titleincollection: Disque solaire
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: 
+
+----
+
+Feedhome: true
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-disque-solaire-2.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: true
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+- benoit-lalloz-disque-solaire-5.jpg
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

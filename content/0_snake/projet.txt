@@ -1,0 +1,105 @@
+Title: Snake
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: unknown
+
+----
+
+Client: Exhibitions
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: 
+
+----
+
+Feedhome: true
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-snake-1-sur-3.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+- benoit-lalloz-snake-3-sur-3.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

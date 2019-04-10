@@ -1,0 +1,69 @@
+$collections-grid:   4;
+$spaces-grid:       2;
+$laboratory-grid:   3;
+
+.grid {
+    margin-bottom: $margin-bottom;
+}
+
+.grid__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--text {
+        display: none;
+    }
+
+    @include sm {
+        flex-direction: row;
+        &--text {
+            display: flex;
+            flex-direction: column;
+        } 
+    }
+}
+
+.grid__item {
+    margin: 0;
+    .grid__row--text > &:last-child {
+        @include margin(0 0 8 0);
+    }
+
+    .grid__row--text > &:first-child {
+        @include margin(2 0 0 0);
+    }
+
+    @include to-sm {
+        width: auto;
+    }
+}
+
+.grid__text {
+    transition: $base-transition;
+    
+    @include sm {
+        .grid__item:hover & a, .grid__item.hover & a {
+            filter: blur($blur-size);
+            color: grey;
+        }
+    }
+}
+
+.grid__image {
+    opacity: 1;
+    transition: $base-transition;
+    background: $background-color;
+    overflow: hidden;
+    // display: inline-block;
+
+    &--hidden {
+        opacity: 0;
+    }
+
+    @include sm {
+        .grid__item:hover &, .grid__item.hover & {
+            background: white;
+        }
+    }
+}

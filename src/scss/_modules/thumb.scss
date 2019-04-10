@@ -1,0 +1,46 @@
+.thumb {
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    max-height: 60vh;
+    height: auto;
+    transition: transform .3s ease-in-out;
+    float: left;
+    mix-blend-mode: multiply;
+
+    @include sm {
+        width: 100%;
+        max-height: calc(100vh - #{$header-height});
+    }
+
+    // &--video {
+    //     position: absolute;
+    // }
+
+    .grid__item--home & {
+        width: auto;
+    }
+
+    &--simple {
+        transform: scale(1.01);
+        @include sm {
+            .grid__item:hover &, .grid__item.hover & {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.thumb__caption {
+    display: inline-block;
+    @include margin(1 0 8 0);
+    width: 100%;
+
+    @include sm {
+        display: none;
+    }
+}

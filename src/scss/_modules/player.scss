@@ -1,0 +1,27 @@
+.player {
+    @include margin(2);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.player__element {
+    @include margin(0 0 0 4);
+    cursor: pointer;
+
+    svg {
+        height: 1em;
+        width: calc(1em * 0.75);
+        fill: $background-color;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.button--hidden {
+    display: none;
+}

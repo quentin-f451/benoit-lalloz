@@ -1,0 +1,35 @@
+.infos {
+    margin-bottom: $margin-bottom;
+}
+
+.infos__image {
+    width: 75%;
+
+    @include sm {
+        width: 25%;
+    }
+}
+
+.infos__text {
+    &--hidden {
+        display: none;
+    }
+
+    p:not(:first-of-type) {
+        margin-top: .5em;
+    }
+}
+
+.infos__more {
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: .5em;
+
+    &::after {
+        content: 'Lire moins';
+    }
+    
+    &.js-previousHidden::after {
+        content: 'Lire plus';
+    }
+}

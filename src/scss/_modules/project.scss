@@ -1,0 +1,27 @@
+.project {
+    @extend .font-1;
+    margin-bottom: $margin-bottom;
+}
+
+.project__text {
+    @include margin(0 0 2 0);
+}
+
+.project__images {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__image {
+    overflow: hidden;
+    img {
+        max-height: 60vh;
+        max-width: 100%;
+        width: auto;
+        float: left;
+
+        @include sm {
+            max-height: calc(100vh - #{$header-height});
+        }
+    }
+}
