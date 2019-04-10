@@ -1,4 +1,4 @@
-Title: Balanciaga London
+Title: Balenciaga London
 
 ----
 
@@ -50,9 +50,7 @@ Feedhometype: false
 
 ----
 
-Feedhomeimage: 
-
-- benoit-lalloz-balenciaga-london-1.jpg
+Feedhomeimage: - benoit-lalloz-balenciaga-london-1.jpg
 
 ----
 
@@ -68,9 +66,7 @@ Feedspacestype: false
 
 ----
 
-Feedspacesimage: 
-
-- benoit-lalloz-balenciaga-london-1.jpg
+Feedspacesimage: - benoit-lalloz-balenciaga-london-1.jpg
 
 ----
 
@@ -86,9 +82,7 @@ Feedcollectionstype: false
 
 ----
 
-Feedcollectionsimage: 
-
-- benoit-lalloz-spaceship-london-3.jpg
+Feedcollectionsimage: - benoit-lalloz-spaceship-london-3.jpg
 
 ----
 

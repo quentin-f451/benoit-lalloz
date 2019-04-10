@@ -52,7 +52,7 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-nanosatellite-1.jpg
+- benoit-lalloz-macrosatellite-1.jpg
 
 ----
 

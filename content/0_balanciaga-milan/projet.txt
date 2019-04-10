@@ -1,4 +1,4 @@
-Title: Balanciaga Milan
+Title: Balenciaga Milan
 
 ----
 
@@ -50,9 +50,7 @@ Feedhometype: false
 
 ----
 
-Feedhomeimage: 
-
-- benoit-lalloz-balenciaga-milan-1.jpg
+Feedhomeimage: - benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 
@@ -68,9 +66,7 @@ Feedspacestype: false
 
 ----
 
-Feedspacesimage: 
-
-- benoit-lalloz-balenciaga-milan-1.jpg
+Feedspacesimage: - benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 
@@ -86,9 +82,7 @@ Feedcollectionstype: false
 
 ----
 
-Feedcollectionsimage: 
-
-- benoit-lalloz-balenciaga-milan-1.jpg
+Feedcollectionsimage: - benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 
