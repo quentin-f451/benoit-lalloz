@@ -2,12 +2,12 @@
 
 // FONT SIZES
 
-$text-default-px:                           16;       // Default font-size in px (default: 16px)
-$line-height-default:                       1.25;     // Default line-height, relative to default font-size (default: 1.25)
+$text-default-px:                           24;       // Default font-size in px (default: 16px)
+$line-height-default:                       0.9;     // Default line-height, relative to default font-size (default: 1.25)
 
 // Viewport values
-$is-global-viewport-text:                   true;     // true for font-size globally defined in vw, false for font-size globally defined in px
-$viewport-width-px:                         1280;     // Screen size used for calculating font-size in vw (like http://emilolsson.com/tools/vw-unit-calc-an-online-responsive-css-font-size-calculator/)
+$is-global-viewport-text:                   false;     // true for font-size globally defined in vw, false for font-size globally defined in px
+$viewport-width-px:                         1450;     // Screen size used for calculating font-size in vw (like http://emilolsson.com/tools/vw-unit-calc-an-online-responsive-css-font-size-calculator/)
 
 // Font sizes - can be any unit
 $text-xxs:                                  0.5rem;   // (default: 0.5rem)  -- small
@@ -19,27 +19,36 @@ $text-xl:                                   2.0rem;   // (default: 3.0rem)  -- h
 $text-xxl:                                  3.0rem;   // (default: 6.0rem)  -- h1
 
 // Line height - realtive to font-size
-$line-xxs:                                  1.0;      // (default: 1.0)
-$line-xs:                                   1.125;    // (default: 1.125)
-$line-sm:                                   1.25;     // (default: 1.25)
-$line-md:                                   1.375;    // (default: 1.375)
-$line-lg:                                   1.5;      // (default: 1.5)
-$line-xl:                                   2.0;      // (default: 2.0)
-$line-xxl:                                  3.0;      // (default: 3.0)
+$line-xxs:                                  0.8;      // (default: 1.0)
+$line-xs:                                   0.9;    // (default: 1.125)
+$line-sm:                                   1;     // (default: 1.25)
+$line-md:                                   1.1;    // (default: 1.375)
+$line-lg:                                   1.2;      // (default: 1.5)
+$line-xl:                                   1.5;      // (default: 2.0)
+$line-xxl:                                  2.0;      // (default: 3.0)
 
 // __________________________________________________________ //
 
 // FONTS
 
-$primary-font-family:                       '';
-$primary-font-url:                          '';       // Without extension
-$primary-fallback:                          'Times New Roman', Times, serif;
-$secondary-font-family:                     '';
-$secondary-font-url:                        '';       // Without extension
-$secondary-fallback:                        Garamond, 'Hoefler Text', 'Times New Roman', Times, serif;
+$primary-font-family:                       'Blender-Book';
+$primary-font-url:                          '../fonts/blender-book';       // Without extension
+$primary-fallback:                          'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$secondary-font-family:                     'Blender-Outline';
+$secondary-font-url:                        '../fonts/BLCIRCUIT-Line';       // Without extension
+$secondary-fallback:                        'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $tertiary-font-family:                      '';
 $tertiary-font-url:                         '';       // Without extension
 $tertiary-fallback:                         'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+
+.font-1 {
+    font-family: $primary-font-family, $primary-fallback;
+}
+
+.font-2 {
+    font-family: $secondary-font-family, $secondary-fallback;
+}
 
 /*
 Fallbacks examples
@@ -53,23 +62,24 @@ Fallbacks examples
 
 // LAYOUT
 
-$number-of-columns:                         12;       // Number of columns
+$number-of-columns:                         120;       // Number of columns
 
-// Base space
-$base-space:                                10px;     // Initial space in px (default: 10px)
+// Base margin, padding and absolute positioning size
+$is-global-viewport-sizes:                  false;    // true for sizes globally defined relatively to default line-height, false for sizes globally defined in px
+$base-space:                                5px;     // Initial space in px or relative to default line-height (default: 10px)
 
 // __________________________________________________________ //
 
 // COLORS
 
 $text-color:                                black;    // Text color
-$link-color:                                blue;     // Link color
-$hover-color:                               red;      // Hover color
+$link-color:                                black;     // Link color
+$hover-color:                               black;      // Hover color
 
 $primary-color:                             black;    // Color 1
 $secondary-color:                           black;    // Color 2
 $tertiary-color:                            black;    // Color 3
-$background-color:                          white;    // Background color
+$background-color:                          rgb(250, 244, 243);    // Background color
 
 // __________________________________________________________ //
 
@@ -93,3 +103,7 @@ $screen-xxl:                                1800px;     // (default: 1800px)
 // __________________________________________________________ //
 
 // FREE CONFIG
+
+$header-height:                             .8em;
+$blur-size:                                 .8px;
+$margin-bottom:                             30vh;
