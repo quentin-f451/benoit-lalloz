@@ -18,62 +18,6 @@ return [
     ]
   ],
 
-  'hooks' => [
-    'file.create:after' => function ($file) {
-      $file->changeName('benoit-lalloz-' . F::name($file->filename()));
-    },
-    'page.update:after' => function ($newPage, $oldPage) {
-      if (!$newPage->isDraft() && $newPage->template() == 'projet') {
-        $pageId = $newPage->id();
-        $feeds = ['feedhome', 'feedspaces', 'feedcollections', 'feedlaboratory'];
-        $feedsTrue = [];
-        foreach ($feeds as $feed) {
-          if (strpos($newPage->$feed(), 'true') !== false) {
-            $feed_a = str_replace('feed', '', $feed);
-            $feed_b = str_replace('home', 'all', $feed_a);
-            array_push($feedsTrue, $feed_b);
-          }
-        }
-
-        foreach ($feedsTrue as $f) {
-          $p = $this->site()->find($f);
-          $content = $p->feeds();
-          if (strpos($content, $pageId) == false) {
-            $newContent = $content . "\r\n- " . $pageId;
-            $p->update([
-              'feeds' => $newContent
-            ]);
-          }
-        }       
-      }
-    },
-    'page.changeStatus:after' => function ($newPage, $oldPage) {
-      if (!$newPage->isDraft() && $newPage->template() == 'projet') {
-        $pageId = $newPage->id();
-        $feeds = ['feedhome', 'feedspaces', 'feedcollections', 'feedlaboratory'];
-        $feedsTrue = [];
-        foreach ($feeds as $feed) {
-          if (strpos($newPage->$feed(), 'true') !== false) {
-            $feed_a = str_replace('feed', '', $feed);
-            $feed_b = str_replace('home', 'all', $feed_a);
-            array_push($feedsTrue, $feed_b);
-          }
-        }
-
-        foreach ($feedsTrue as $f) {
-          $p = $this->site()->find($f);
-          $content = $p->feeds();
-          if (strpos($content, $pageId) == false) {
-            $newContent = $content . "\r\n- " . $pageId;
-            $p->update([
-              'feeds' => $newContent
-            ]);
-          }
-        }       
-      }
-    }
-  ],
-
   'panel' => array('css' => 'assets/css/panel.css'),
 
   'debug'  => true,

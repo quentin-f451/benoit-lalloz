@@ -28,14 +28,14 @@ Kirby::plugin('quentin-f451/methods', [
 								$i++;
 								if ($t == 'collections' && !empty($types)) {
 									if ($projet->titleInCollection() != '') {
-										$ret .= 'In ' . $projet->collection() . ' collection, ' . $projet->titleInCollection();
+										$ret .= captionCollection($projet, true);
 									} else {
-										$ret .= 'In ' . $projet->collection() . ' collection, ' . $projet->title();
+										$ret .= captionCollection($projet, false);
 									}
 								} else if ($t == 'spaces' && !empty($types)) {
-									$ret .= 'Spaces for ' . $projet->client() . ' in ' . $projet->lieu();
+									$ret .= captionSpaces($projet);
 								} else if ($t == 'laboratory' && !empty($types)) {
-									$ret .= 'From our Laboratory, watch ' . $projet->title();
+									$ret .= captionLab($projet);
 								}
 								if($i < count($types))
 									$ret .= " and ";
@@ -45,14 +45,14 @@ Kirby::plugin('quentin-f451/methods', [
 						} else {
 							if (in_array('collections', $types) && $feed == 'collections' && !empty($types)) {
 								if ($projet->titleInCollection() != '') {
-									$ret = 'In ' . $projet->collection() . ' collection, ' . $projet->titleInCollection();
+									$ret = captionCollection($projet, true);
 								} else {
-									$ret = 'In ' . $projet->collection() . ' collection, ' . $projet->title();
+									$ret = captionCollection($projet, false);
 								}
 							} else if (in_array('spaces', $types) && $feed == 'spaces' && !empty($types)) {
-								$ret = 'Spaces for ' . $projet->client() . ' in ' . $projet->lieu();
+								$ret = captionSpaces($projet);
 							} else if (in_array('laboratory', $types) && $feed == 'laboratory' && !empty($types)) {
-								$ret = 'From our Laboratory, watch ' . $projet->title();
+								$ret = captionLab($projet);
 							}
 							$ret .= ".";
 						}
@@ -63,5 +63,17 @@ Kirby::plugin('quentin-f451/methods', [
 
 					return $ret;
 				}
-		]
+			],
+
+			'hooks' => [
+				'file.create:after' => function ($file) {
+					$file->changeName('benoit-lalloz-' . F::name($file->filename()));
+				},
+				'page.update:after' => function ($newPage, $oldPage) {
+					addToFeed($newPage);
+				},
+				'page.changeStatus:after' => function ($newPage, $oldPage) {
+					addToFeed($newPage);
+				}
+			]
 ]);
