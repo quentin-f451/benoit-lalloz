@@ -11,7 +11,12 @@
         $coverType = $feedId . 'type';
         $coverVimeo = $feedId . 'vimeo';
         $coverImage = $feedId . 'image';
-        $cover = $project->$coverType() == 'false' ? 'image' : 'video';
+		$cover = $project->$coverType() == 'false' ? 'image' : 'video';
+		
+		$pageLink = $project->url();
+		$pageLegende = $project->legendeAuto()->toCaption($pageId);
+		$pageNum = $projects->indexOf($project);
+		$pageStatus = $project->status();
 
         if ($cover == 'image') {
             $media = $project->$coverImage()->toFile();
@@ -26,13 +31,10 @@
             $mediaOrientation = $media->dimensions()->orientation();
             $mediaRatio = $media->dimensions()->ratio();
 
-            $pageLink = $project->url();
-            $pageLegende = $project->legendeAuto()->toCaption($pageId);
-            $pageNum = $projects->indexOf($project);
-
             // Assign variables to array
             if( !array_key_exists($pageNum, $allProjects)):
                 $allProjects[$pageNum] = array(
+					'type'			=> (string) $cover,
                     'srcXSmall'		=> (string) $mediaSrcXSmall,
                     'srcSmall'		=> (string) $mediaSrcSmall,
                     'srcMedium'		=> (string) $mediaSrcMedium,
@@ -42,10 +44,50 @@
                     'orientation'	=> (string) $mediaOrientation,
                     'caption'		=> (string) $pageLegende,
                     'id'			=> (string) $pageNum,
-                    'url'			=> (string) $pageLink,
+					'url'			=> (string) $pageLink,
+					'status'		=> (string) $pageStatus
                 );
             endif;
-        }
+        } else {
+			$media = $project->$coverVimeo();
+			$mediaOrientation = 'landscape';
+			$mediaRatio = 1.77777;
+			$medias = array();
+			$gallery = $project->files()->template('galerie');
+
+			foreach ($gallery as $m) {
+				$mediaSrcXSmall = $m->thumb('xsmall')->url();
+				$mediaSrcSmall = $m->thumb('small')->url();
+				$mediaSrcMedium = $m->thumb('medium')->url();
+				$mediaSrcLarge = $m->thumb('large')->url();
+				$mediaSrcXLarge = $m->thumb('xlarge')->url();
+				$mediaNum = $gallery->indexOf($m);
+				if( !array_key_exists($mediaNum, $medias)):
+					$medias[$mediaNum] = array(
+						'srcXSmall'		=> (string) $mediaSrcXSmall,
+						'srcSmall'		=> (string) $mediaSrcSmall,
+						'srcMedium'		=> (string) $mediaSrcMedium,
+						'srcLarge'		=> (string) $mediaSrcLarge,
+						'srcXLarge'		=> (string) $mediaSrcXLarge
+					);
+				endif;
+			}
+
+			// Assign variables to array
+            if( !array_key_exists($pageNum, $allProjects)):
+                $allProjects[$pageNum] = array(
+					'type'			=> (string) $cover,
+                    'ratio'			=> (string) $mediaRatio,
+					'orientation'	=> (string) $mediaOrientation,
+                    'caption'		=> (string) $pageLegende,
+                    'id'			=> (string) $pageNum,
+					'url'			=> (string) $pageLink,
+					'vimeo'			=> (string) $media,
+					'medias'		=> (array) $medias,
+					'status'		=> (string) $pageStatus
+                );
+            endif;
+		}
     endforeach;	
     
     if ($pageId == 'home') 
@@ -126,12 +168,13 @@
         <div class="grid__row grid__row--image">
 			<?php foreach($row as $mediaSlug => $mediaArray): ?>
 				<article class="grid__item grid__item--image col-<?= $mediaArray['columns'] ?> js-item">
-					<div class="grid__image grid__image--<?= $mediaArray['ratio'] ?>">
-						<a href="<?= $mediaArray['url'] ?>">
-							<img class="thumb thumb--simple" src="<?= $mediaArray['srcXLarge'] ?>" srcset="<?= $mediaArray['srcXSmall'] ?> 400w, <?= $mediaArray['srcSmall'] ?> 750w, <?= $mediaArray['srcMedium'] ?> 1000w, <?= $mediaArray['srcLarge'] ?> 1720w, <?= $mediaArray['srcXLarge'] ?> 2560w" alt="<?= $mediaArray['caption'] ?>">
-							<div class="thumb__caption"><?= $mediaArray['caption'] ?></div>
-						</a>
-					</div>
+					<?php 
+					if($mediaArray['type'] == "image"):
+						snippet('image', ['mediaArray' => $mediaArray]);
+					else:
+						snippet('video', ['mediaArray' => $mediaArray]);
+					endif;
+					?>
 				</article>
 			<?php endforeach; ?>
 		</div>
@@ -140,9 +183,9 @@
 			<?php foreach($row as $mediaSlug => $mediaArray): ?>
 				<article class="grid__item grid__item--text js-item">
 					<div class="grid__text">
-						<a href="<?= $mediaArray['url'] ?>">
+						<?php if($mediaArray['status'] == 'listed') echo '<a href="' . $mediaArray["url"] . '">'; ?>
 							<?= $mediaArray['caption'] ?>
-						</a>
+						<?php if($mediaArray['status'] == 'listed') echo '</a>'; ?>
 					</div>
 				</article>
 			<?php endforeach; ?>

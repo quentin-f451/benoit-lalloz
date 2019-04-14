@@ -29,12 +29,12 @@ const Home = {
   },
   hoverThumb: (e, element) => {
     var width = element.clientWidth;
-    var numberOfImages = element.children.length;
+    var numberOfImages = element.children[0].children.length - 1;
     var subdivision = width / numberOfImages;
     var cursorPosition = e.layerX;
     var imageNumber = Math.floor(cursorPosition / subdivision);
-    Array.from(element.children).forEach(img => { img.classList.add('thumb--hidden') });
-    element.children[imageNumber].classList.remove('thumb--hidden');
+    Array.from(element.children[0].children).forEach(img => { img.classList.add('thumb--hidden') });
+    element.children[0].children[imageNumber].classList.remove('thumb--hidden');
   },
   hoverItem: (e, element, hover) => {
     var index = Home.getElementIndex(element);

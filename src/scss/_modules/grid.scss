@@ -26,6 +26,7 @@ $laboratory-grid:   3;
 
 .grid__item {
     margin: 0;
+    position: relative;
     .grid__row--text > &:last-child {
         @include margin(0 0 8 0);
     }
