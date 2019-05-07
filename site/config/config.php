@@ -1,7 +1,7 @@
 <?php 
 
 return [
-  'community.markdown-field.buttons'    => ['italic', 'link'],
+  'community.markdown-field.buttons'    => ['italic', 'link', 'horizontal-rule'],
   'community.markdown-field.font'       => [
     'family'  => 'sans-serif',
     'scaling' => false,
@@ -10,6 +10,7 @@ return [
 
   'thumbs' => [
     'presets' => [
+        'blur'  => ['width' => 200, 'height' => 200, 'quality' => 40],
         'xsmall'  => ['width' => 400, 'height' => 400, 'quality' => 80],
         'small'   => ['width' => 750, 'height' => 750, 'quality' => 80],
         'medium'  => ['width' => 1000, 'height' => 1000, 'quality' => 80],
@@ -20,15 +21,6 @@ return [
 
   'panel' => array('css' => 'assets/css/panel.css'),
 
-  'debug'  => true,
-
-  'routes' => [
-    [
-      'pattern' => '/',
-      'action'  => function () {
-        return go('all');
-      }
-    ]
-  ]
+  'debug'  => true
 
 ];

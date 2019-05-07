@@ -2,15 +2,25 @@ Title: Incandescence
 
 ----
 
+Feedhometype: true
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-vlcsnap-00002.jpg
+
+----
+
+Feedhomevimeo: https://vimeo.com/329092000
+
+----
+
 Categorie: laboratory
 
 ----
 
 Lieu: 
-
-----
-
-Year: 2011
 
 ----
 
@@ -42,21 +52,11 @@ Credits:
 
 ----
 
+Year: 2011
+
+----
+
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-vlcsnap-00002.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 

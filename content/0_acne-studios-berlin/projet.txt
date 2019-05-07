@@ -2,7 +2,22 @@ Title: Acne Studios Berlin
 
 ----
 
-Categorie: spaces
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- >
+  benoit-lalloz-benoit-lalloz-acne-studios-berlin-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces, collections
 
 ----
 
@@ -10,27 +25,23 @@ Lieu: Weinmeisterstr. 2, 10178 Berlin, Germany
 
 ----
 
-Year: 2017
-
-----
-
 Client: Acne Studios
 
 ----
 
-Collection: 
+Collection: Creatures
 
 ----
 
-Titleincollection: 
+Titleincollection: Dragonfly
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Acne Studios store, Weinmeisterstraße 2, Berlin
 
 ----
 
@@ -38,25 +49,15 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Acne Studios
+
+----
+
+Year: 2018
 
 ----
 
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-acne-studios-berlin-1.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 
@@ -68,9 +69,7 @@ Feedspacestype: false
 
 ----
 
-Feedspacesimage: 
-
-- benoit-lalloz-acne-studios-berlin-1.jpg
+Feedspacesimage: - benoit-lalloz-acne-studios-berlin-1.jpg
 
 ----
 

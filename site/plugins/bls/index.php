@@ -12,32 +12,32 @@ function chunkArray($field, $randomized = 'true', $number) {
     }
 };
 
+function tagslug($text) {
+	$text = str_replace('&', '-and-', $text);
+	$text = preg_replace('~[^\\pL\d]+~u', '-', $text);
+	$text = trim($text, '-');
+	$text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+	$text = strtolower($text);
+	$text = preg_replace('~[^-\w]+~', '', $text);
+	if (empty($text)){
+		return 'n-a';
+	}
+	return $text;
+};
+
 function addToFeed($pageToAdd) {
     if (!$pageToAdd->isDraft() && $pageToAdd->template() == 'projet') {
         $pageId = $pageToAdd->id();
-        $feeds = ['feedhome', 'feedspaces', 'feedcollections', 'feedlaboratory'];
-        $feedsTrue = [];
-
-        foreach ($feeds as $feed) {
-            if (strpos($pageToAdd->$feed(), 'true') !== false) {
-                $feed_a = str_replace('feed', '', $feed);
-                $feed_b = str_replace('home', 'all', $feed_a);
-                array_push($feedsTrue, $feed_b);
-            }
+        $p = $pageToAdd->site();
+        $content = $p->feeds();
+        $current = $content->split('- ');
+        $trimmedCurrent = array_map('trim', $current);
+        if (!in_array($pageId, $trimmedCurrent)) {
+            $newContent = $content . "\r\n- " . $pageId;
+            $p->update([
+                'feeds' => $newContent
+            ]);
         }
-
-        foreach ($feedsTrue as $f) {
-            $p = $pageToAdd->site()->find($f);
-            $content = $p->feeds();
-            $current = $content->split('- ');
-            $trimmedCurrent = array_map('trim', $current);
-            if (!in_array($pageId, $trimmedCurrent)) {
-                $newContent = $content . "\r\n- " . $pageId;
-                $p->update([
-                    'feeds' => $newContent
-                ]);
-            }
-        }       
     }
 }
 

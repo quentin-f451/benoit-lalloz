@@ -2,6 +2,20 @@ Title: Snake
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-snake-1-sur-3.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: spaces
 
 ----
@@ -42,20 +56,6 @@ Feedhome: true
 
 ----
 
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-snake-1-sur-3.jpg
-
-----
-
-Feedhomevimeo: 
-
-----
-
 Feedspaces: true
 
 ----
@@ -64,9 +64,7 @@ Feedspacestype: false
 
 ----
 
-Feedspacesimage: 
-
-- benoit-lalloz-snake-3-sur-3.jpg
+Feedspacesimage: - benoit-lalloz-snake-3-sur-3.jpg
 
 ----
 

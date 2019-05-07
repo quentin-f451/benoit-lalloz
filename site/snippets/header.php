@@ -11,7 +11,12 @@
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
   <meta name="author" content="">
-  <meta name="description" content="<?= $site->metaDescription() ?>">
+
+  <?php if($page->template() == 'default'): ?>
+    <meta name="description" content="<?= $site->descriptionSeo()->html() ?>">
+  <?php else: ?>
+    <meta name="description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
+  <?php endif; ?>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,25 +46,35 @@
 
   <meta property="og:url" content="<?= $site->url() ?>">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?= $site->metaTitle() ?>">
-  <meta property="og:description" content="<?= $site->metaDescription() ?>">
-  <meta property="og:image" content="<?php foreach($site->images()->template('seo') as $seo){echo $seo->url();} ?>">
+  <meta property="og:title" content="<?= $site->title() ?> | <?= $page->title() ?>">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="<?= $site->metaDescription() ?>">
-  <meta name="twitter:title" content="<?= $site->metaTitle() ?>">
-  <meta name="twitter:image" content="<?php foreach($site->images()->template('seo') as $seo){echo $seo->url();} ?>">
+  <meta name="twitter:title" content="<?= $site->title() ?> | <?= $page->title() ?>">
+
+
+  <?php if($page->template() == 'default'): ?>
+    <meta property="og:description" content="<?= $site->descriptionSeo()->html() ?>">
+    <meta name="twitter:description" content="<?= $site->descriptionSeo()->html() ?>">
+    <meta name="twitter:image" content="<?php foreach($site->images()->template('imageseo') as $imageseo){echo $imageseo->url();} ?>">
+    <meta property="og:image" content="<?php foreach($site->images()->template('imageseo') as $imageseo){echo $imageseo->url();} ?>">
+  <?php else: ?>
+    <meta property="og:description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
+    <meta name="twitter:description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
+    <meta name="twitter:image" content="<?php echo $page->files()->template('galerie')->first()->url() ?>">
+    <meta property="og:image" content="<?php echo $page->files()->template('galerie')->first()->url() ?>">
+  <?php endif; ?>
 
   <?= css('assets/css/bundle.css') ?>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63532487-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63532487-1');
+    </script>
 
 </head>
 
 <body>
-
-  <div class="header js-header">
-    <div class="header__logo js-logo">benoitlalloz</div>
-    <?php snippet('menu') ?>
-  </div>
-  
-  <main class="main">
-    <div class="content home js-content">

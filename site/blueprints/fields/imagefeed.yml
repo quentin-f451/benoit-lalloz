@@ -1,6 +1,6 @@
 type: files
 label: Sélectionner l'image
 multiple: false
-width: 1/2
+width: 3/4
 image:
   cover: true

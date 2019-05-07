@@ -1,0 +1,107 @@
+Title: Balenciaga George V
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-balenciaga-george-v-2.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces, collections
+
+----
+
+Lieu: Paris
+
+----
+
+Client: Balenciaga
+
+----
+
+Collection: Skies
+
+----
+
+Titleincollection: Climatic
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Acne Studios, Bruno Scotti, Benoit Lalloz
+
+----
+
+Year: 2010
+
+----
+
+Feedhome: true
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

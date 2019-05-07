@@ -16,8 +16,7 @@ status:
 
 # 1. INFORMATIONS
 # 2. GALERIE D'IMAGES
-# 3. FEEDS
-	
+
 #----------------------------------------------------------------------------------
 
 tabs:
@@ -28,6 +27,32 @@ tabs:
     label: 1. Informations
     icon: text
     columns:
+
+      - width: 1/1
+        sections:
+          projetFeeds:
+            type: fields
+            fields: 
+              feedheadline:
+                type: headline
+                label: Dans le feed d'accueil
+              feedhometype:
+                extends: fields/togglevideo
+              feedhomeimage:
+                extends: fields/imagefeed
+                when: 
+                  feedhometype: false
+              feedhomevimeo:
+                extends: fields/vimeo
+                when: 
+                  feedhometype: true
+
+              line-a:
+                type: line
+
+              infoheadline:
+                type: headline
+                label: Informations du projet
 
       - width: 1/3
         sections:
@@ -46,12 +71,12 @@ tabs:
                 label: Lieu
                 type: text
                 icon: globe
-              year:
-                label: Année
-                type: number
-                min: 1990
-                max: 2050
-                icon: calendar
+              # year:
+              #   label: Année
+              #   type: number
+              #   min: 1990
+              #   max: 2050
+              #   icon: calendar
               client:
                 label: Client
                 type: select
@@ -108,94 +133,3 @@ tabs:
       projetGalerie:
         headline: Galerie
         extends: sections/galerie
-
-
-#-- 3. FEEDS
-  
-  feeds:
-    label: 3. Feeds
-    icon: dashboard
-    sections:
-      projetFeeds:
-        type: fields
-        fields: 
-          feedhome:
-            extends: fields/toggle
-            label: Dans le feed d'accueil?
-          feedhometype:
-            extends: fields/togglevideo
-            when: 
-              feedhome: true
-          feedhomeimage:
-            extends: fields/imagefeed
-            when: 
-              feedhometype: false
-              feedhome: true
-          feedhomevimeo:
-            extends: fields/vimeo
-            when: 
-              feedhometype: true
-              feedhome: true
-
-          line-a:
-            type: line
-
-          feedspaces:
-            extends: fields/toggle
-            label: Dans le feed Spaces?
-          feedspacestype:
-            extends: fields/togglevideo
-            when: 
-              feedspaces: true
-          feedspacesimage:
-            extends: fields/imagefeed
-            when: 
-              feedspacestype: false
-              feedspaces: true
-          feedspacesvimeo:
-            extends: fields/vimeo
-            when: 
-              feedspacestype: true
-              feedspaces: true
-
-          line-b:
-            type: line
-
-          feedcollections:
-            extends: fields/toggle
-            label: Dans le feed Collections?
-          feedcollectionstype:
-            extends: fields/togglevideo
-            when: 
-              feedcollections: true
-          feedcollectionsimage:
-            extends: fields/imagefeed
-            when: 
-              feedcollectionstype: false
-              feedcollections: true
-          feedcollectionsvimeo:
-            extends: fields/vimeo
-            when: 
-              feedcollectionstype: true
-              feedcollections: true
-
-          line-c:
-            type: line
-
-          feedlaboratory:
-            extends: fields/toggle
-            label: Dans le feed Laboratory?
-          feedlaboratorytype:
-            extends: fields/togglevideo
-            when: 
-              feedlaboratory: true
-          feedlaboratoryimage:
-            extends: fields/imagefeed
-            when: 
-              feedlaboratorytype: false
-              feedlaboratory: true
-          feedlaboratoryvimeo:
-            extends: fields/vimeo
-            when: 
-              feedlaboratorytype: true
-              feedlaboratory: true

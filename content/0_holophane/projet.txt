@@ -1,0 +1,101 @@
+Title: Holophane
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: collections
+
+----
+
+Lieu: Paris
+
+----
+
+Client: 
+
+----
+
+Collection: Glass
+
+----
+
+Titleincollection: Holophane
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Holophane
+
+----
+
+Projettext: Entrance light for the Parisian Subway
+
+----
+
+Credits: 
+
+----
+
+Feedhome: false
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: true
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: - benoit-lalloz-holophane-4.jpg
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

@@ -1,0 +1,107 @@
+Title: Acne Studios Madison
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-acne-studios-madison-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces, collections
+
+----
+
+Lieu: Madison Avenue, NYC
+
+----
+
+Client: Acne Studios
+
+----
+
+Collection: Skies
+
+----
+
+Titleincollection: Horizon
+
+----
+
+Legendeauto: true
+
+----
+
+Legendemanuelle: 
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Acne Studios, Helene Chapeau
+
+----
+
+Year: 2016
+
+----
+
+Feedhome: true
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: - benoit-lalloz-acne-studios-madison-1.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

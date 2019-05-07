@@ -3,7 +3,6 @@ import animateScrollTo from 'animated-scroll-to';
 const Home = {
   init: () => {
     Home.main = document.querySelector('.main');
-    Home.top = document.querySelector('.js-top');
     Home.thumbs = document.querySelectorAll('.js-thumb');
     Home.items = document.querySelectorAll('.js-item');
 
@@ -18,10 +17,8 @@ const Home = {
 
       }
     };
-    if (Home.top) Home.top.addEventListener('click', function (e) { Home.backToTop(e); })
-
   },
-  backToTop: (e) => {
+  backToTop: () => {
     animateScrollTo(0, {
       speed: 200,
       element: Home.main

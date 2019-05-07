@@ -2,15 +2,25 @@ Title: Acne Studios Munich
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-acne-studios-munich-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: spaces
 
 ----
 
 Lieu: Munich
-
-----
-
-Year: 2019
 
 ----
 
@@ -38,25 +48,15 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Acne Studios, Helene Chapeau
+
+----
+
+Year: 2019
 
 ----
 
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-acne-studios-munich-1.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 
@@ -68,9 +68,7 @@ Feedspacestype: false
 
 ----
 
-Feedspacesimage: 
-
-- benoit-lalloz-acne-studios-munich-1.jpg
+Feedspacesimage: - benoit-lalloz-acne-studios-munich-1.jpg
 
 ----
 

@@ -1,23 +1,21 @@
 <div class="menu js-menu">
 
-    <?php 
-        foreach($site->children()->published()->filterBy('template', '!*=', 'projet')->limit(5) as $menuItem): 
-        $ifChild = $menuItem->id() == 'collections' || $menuItem->id() == 'spaces' ? '' : 'menu__item--nochild';
-    ?>
-        <div class="menu__section">
-            <a href="<?= $menuItem->url(); ?>">
-                <span class="menu__item menu__item--main <?= $ifChild; ?>"><?= $menuItem->title(); ?></span>
-                <?php if($menuItem->id() == 'spaces'): ?>
+        <?php 
+            foreach($site->bigSections()->split() as $menuItem): 
+            $ifChild = $menuItem == 'Collections' || $menuItem == 'Spaces' ? '' : 'menu__item--nochild';
+        ?>
+            <div class="menu__section">
+                <span class="menu__item <?php if($menuItem == 'All projects') echo 'menu__item--selected'; ?> menu__item--main js-filter <?= $ifChild; ?>" data-filter="<?php if($menuItem == 'All projects') { echo 'all'; } else { echo tagslug($menuItem); }; ?>"><span><?= $menuItem ?></span></span>
+                <?php if($menuItem == 'Spaces'): ?>
                     <?php foreach ($site->clients()->split() as $category): ?>
-						<span class="menu__item menu__item--sub"><?= $category; ?></span>
-					<?php endforeach ?>
-                <?php elseif($menuItem->id() == 'collections'): ?>
+                        <span class="menu__item menu__item--sub js-filter" data-filter="<?= tagslug($category); ?>"><span><?= $category; ?></span></span>
+                    <?php endforeach; ?>
+                <?php elseif($menuItem == 'Collections'): ?>
                     <?php foreach ($site->collections()->split() as $category): ?>
-						<span class="menu__item menu__item--sub"><?= $category; ?></span>
-					<?php endforeach ?>
-                <? endif; ?>
-            </a>
-        </div>
-    <?php endforeach; ?>
+                        <span class="menu__item menu__item--sub js-filter" data-filter="<?= tagslug($category); ?>"><span><?= $category; ?></span></span>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </div>
+        <?php endforeach; ?>
 
 </div>

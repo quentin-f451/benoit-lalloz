@@ -9,11 +9,15 @@ const Header = {
     Header.menu = document.querySelector('.js-menu');
 
     if (window.matchMedia("(min-width: 576px)").matches) {
-      if (Header.main) Header.main.addEventListener('scroll', function (e) { Header.scrollMenu(true); })
-      if (Header.header) Header.header.addEventListener('click', function (e) { Header.headerClick(e, this); })
+      Header.main.addEventListener('scroll', function (e) { Header.scrollMenu(true); })
+      if (Header.menu) {
+        Header.header.addEventListener('mouseenter', function (e) { Header.menuEnter(e); })
+        Header.header.addEventListener('mouseleave', function (e) { Header.menuLeave(e); })
+      }
+    } else {
+      if (Header.logo && Header.menu) Header.logo.addEventListener('click', function (e) { Header.menuClick(e); })
+      if (Header.header) document.addEventListener('click', function (e) { Header.outsideClick(e); })
     };
-    if (Header.logo) Header.logo.addEventListener('click', function (e) { Header.menuClick(e); })
-    if (Header.header) document.addEventListener('click', function (e) { Header.outsideClick(e); })
   },
   scrollMenu: (scroll) => {
     var logoWidth = Header.logo.clientWidth;
@@ -29,13 +33,27 @@ const Header = {
       Header.header.style.paddingLeft = headerWidth - 300 + 'px';
     }
   },
+  menuEnter: (e) => {
+      Header.main.classList.add('main--blocked');
+      Header.header.classList.add('header--transition');
+      Header.header.classList.add('header--open');
+      Header.menu.slideDown(300);
+      setTimeout(function() { Header.header.classList.remove('header--transition'); }, 200)
+  },
+  menuLeave: (e) => {
+      Header.main.classList.remove('main--blocked');
+      Header.header.classList.add('header--transition');
+      Header.header.classList.remove('header--open');
+      Header.menu.slideUp(300);
+      setTimeout(function() { Header.header.classList.remove('header--transition'); }, 200)
+  },
   menuClick: (e) => {
     Header.main.classList.toggle('main--blocked');
     Header.header.classList.add('header--transition');
 
     if (Header.header.classList.contains('header--open')) {
-      Header.header.classList.remove('header--open');
-      if (Header.header.classList.contains('header--after')) Header.scrollMenu(true)
+        Header.header.classList.remove('header--open');
+        if (Header.header.classList.contains('header--after')) Header.scrollMenu(true)
     } else {
       Header.header.classList.add('header--open');
       if (Header.header.classList.contains('header--after')) Header.scrollMenu(false)
@@ -43,19 +61,6 @@ const Header = {
 
     Header.menu.slideToggle(300);
     setTimeout(function() { Header.header.classList.remove('header--transition'); }, 200) 
-  },
-  headerClick: (e, element) => {
-    if (e.target == element && !element.classList.contains('header--open')) {
-        var headerWidth = element.clientWidth;
-        var logoWidth = Header.logo.clientWidth / 2;
-        var paddingL = e.layerX - logoWidth;
-        var scrollPosition = paddingL / (headerWidth - Header.logo.clientWidth);
-        var scrollTop = Math.round((Header.main.scrollHeight - Header.main.clientHeight) * scrollPosition);
-        animateScrollTo(scrollTop, {
-            speed: 400,
-            element: Header.main
-        })
-    }
   },
   outsideClick: (e) => {
     var isClickInside = Header.header.contains(e.target);

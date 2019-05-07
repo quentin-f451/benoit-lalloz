@@ -1,24 +1,14 @@
 .menu {
     @include margin(2 0 0 0);
-    width: 300px;
     display: none;
+    width: 291px;
+
+    @include sm {
+        width: 363px;
+    }
 }
 
 .menu__section {
-    opacity: 0;
-    transition: $base-transition;
-
-    .header--open & {
-        opacity: 1;
-    }
-
-    @include sm {
-        &:hover a {
-            filter: blur($blur-size);
-            color: grey;
-        }
-    } 
-
     &:not(:last-of-type) {
         @include margin(0 0 2 0);
         @include sm {
@@ -29,9 +19,21 @@
 
 .menu__item {
     &--main {
+        &.menu__item--selected ~ .menu__item, &.menu__item--selected::after {
+            filter: blur($blur-size);
+            color: grey;
+        }
+
         &::after {
             content: ':';
         }
+
+        @include sm {
+            &:hover ~ .menu__item, &:hover::after {
+                filter: blur($blur-size);
+                color: grey;
+            }
+        } 
     } 
 
     &--sub {
@@ -47,6 +49,18 @@
     &--nochild {
         &::after {
             content: '.';
+        }
+    } 
+
+    &.menu__item--selected span {
+        filter: blur($blur-size);
+        color: grey;
+    }
+
+    @include sm {
+        &:hover span {
+            filter: blur($blur-size);
+            color: grey;
         }
     } 
 }

@@ -2,15 +2,26 @@ Title: Balenciaga, Musée des Arts Décoratifs
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- >
+  benoit-lalloz-balenciaga-exhibition-7.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: spaces
 
 ----
 
 Lieu: Musée des Arts Décoratifs, Paris
-
-----
-
-Year: 2016
 
 ----
 
@@ -42,22 +53,11 @@ Credits:
 
 ----
 
+Year: 2016
+
+----
+
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- >
-  benoit-lalloz-balenciaga-exhibition-7.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 

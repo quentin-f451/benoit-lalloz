@@ -2,15 +2,25 @@ Title: Nanosatellites
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-macrosatellite-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: collections
 
 ----
 
 Lieu: 
-
-----
-
-Year: 2016
 
 ----
 
@@ -42,21 +52,11 @@ Credits:
 
 ----
 
+Year: 2016
+
+----
+
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-macrosatellite-1.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 
@@ -84,9 +84,7 @@ Feedcollectionstype: false
 
 ----
 
-Feedcollectionsimage: 
-
-- benoit-lalloz-nacrosatellite-2.jpg
+Feedcollectionsimage: - benoit-lalloz-nacrosatellite-2.jpg
 
 ----
 

@@ -2,15 +2,25 @@ Title: Balenciaga Milan
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-balenciaga-milan-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: spaces, collections
 
 ----
 
 Lieu: Milan
-
-----
-
-Year: 2011
 
 ----
 
@@ -38,25 +48,15 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Gregoire Vieille, Benoit Lalloz
+
+----
+
+Year: 2011
 
 ----
 
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-balenciaga-milan-1.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 
@@ -68,9 +68,7 @@ Feedspacestype: false
 
 ----
 
-Feedspacesimage: 
-
-- benoit-lalloz-balenciaga-milan-1.jpg
+Feedspacesimage: - benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 
@@ -86,9 +84,7 @@ Feedcollectionstype: false
 
 ----
 
-Feedcollectionsimage: 
-
-- benoit-lalloz-balenciaga-milan-1.jpg
+Feedcollectionsimage: - benoit-lalloz-balenciaga-milan-1.jpg
 
 ----
 

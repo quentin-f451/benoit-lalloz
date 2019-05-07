@@ -1,4 +1,9 @@
-.backtop {
+.jump {
     text-transform: uppercase;
     cursor: pointer;
+
+    &:hover {
+        filter: blur($blur-size);
+        color: grey;
+    }
 }

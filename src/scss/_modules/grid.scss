@@ -4,12 +4,18 @@ $laboratory-grid:   3;
 
 .grid {
     margin-bottom: $margin-bottom;
+
+    &--hidden {
+        display: none;
+    }
 }
 
 .grid__row {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
 
     &--text {
         display: none;
@@ -20,19 +26,25 @@ $laboratory-grid:   3;
         &--text {
             display: flex;
             flex-direction: column;
+            @include padding(2 0 8 0);
         } 
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    &--opacity {
+        opacity: 0;
     }
 }
 
 .grid__item {
     margin: 0;
     position: relative;
-    .grid__row--text > &:last-child {
-        @include margin(0 0 8 0);
-    }
 
-    .grid__row--text > &:first-child {
-        @include margin(2 0 0 0);
+    &--hidden {
+        display: none;
     }
 
     @include to-sm {
@@ -56,6 +68,8 @@ $laboratory-grid:   3;
     transition: $base-transition;
     background: $background-color;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
     // display: inline-block;
 
     &--hidden {

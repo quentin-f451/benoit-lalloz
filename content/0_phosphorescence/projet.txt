@@ -2,15 +2,25 @@ Title: Phosphorescence
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-phosphorescence-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: laboratory
 
 ----
 
 Lieu: 
-
-----
-
-Year: 2013
 
 ----
 
@@ -26,11 +36,11 @@ Titleincollection:
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Phosphorescence
 
 ----
 
@@ -42,21 +52,11 @@ Credits:
 
 ----
 
+Year: 2013
+
+----
+
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- benoit-lalloz-phosphorescence-1.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 
@@ -100,9 +100,7 @@ Feedlaboratorytype: false
 
 ----
 
-Feedlaboratoryimage: 
-
-- benoit-lalloz-phosphorescence-5.jpg
+Feedlaboratoryimage: - benoit-lalloz-phosphorescence-5.jpg
 
 ----
 

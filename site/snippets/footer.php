@@ -1,4 +1,3 @@
-        <div class="backtop js-top">Top</div>
     </div>
 </main>
 

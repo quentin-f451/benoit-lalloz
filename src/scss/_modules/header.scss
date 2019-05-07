@@ -21,9 +21,10 @@
 
 .header__logo {
     @extend .font-2;
-    height: $header-height;
+    height: 24px;
     display: inline-block;
-    width: 153px;
+    width: 291px;
+    padding: 2px;
     cursor: pointer;
     text-transform: uppercase;
     
@@ -33,10 +34,22 @@
     }
 
     @include sm {
+        height: $header-height;
         font-size: $text-md;
-        width: 191px;
+        width: 363px;
         &:hover {
             filter: blur($blur-size);
         }
+    }
+
+    &:focus, & a:focus {
+        outline: none !important; 
+    }
+}
+
+.header--main a {
+    pointer-events: none;
+    @include sm{
+        pointer-events: all;
     }
 }

@@ -1,10 +1,9 @@
 .thumb {
     object-fit: cover;
     object-position: center;
-    width: auto;
     max-height: 60vh;
     height: auto;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, filter .3s linear;
     float: left;
     mix-blend-mode: multiply;
 
@@ -32,6 +31,11 @@
 
     &--hidden {
         display: none;
+    }
+
+    &--contain {
+        object-fit: contain;
+        object-position: left;
     }
 }
 

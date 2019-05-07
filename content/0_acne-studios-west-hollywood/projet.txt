@@ -2,15 +2,26 @@ Title: Acne Studios West Hollywood
 
 ----
 
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- >
+  benoit-lalloz-acne-studios-west-hollywood-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
 Categorie: spaces
 
 ----
 
 Lieu: 8920 Melrose Avenue West Hollywood 90069
-
-----
-
-Year: 2017
 
 ----
 
@@ -36,32 +47,21 @@ Legendemanuelle:
 
 Projettext: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ex purus, nec porttitor nunc rutrum sed. Quisque mollis sem eu odio tincidunt bibendum. Duis sit amet lorem eget tellus posuere interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras tristique porttitor libero nec fermentum. Phasellus ultrices ullamcorper nisi, ac ultricies nulla bibendum id. Praesent hendrerit maximus sagittis. Pellentesque id diam lectus. Quisque urna mi, rutrum sed condimentum quis, ultricies a diam. Fusce interdum, leo at auctor suscipit, eros lectus porttitor tortor, id posuere massa dui varius orci. Pellentesque interdum dolor sodales sem auctor laoreet. Quisque est leo, ultrices sit amet velit vel, rhoncus vehicula enim.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. (link: http://groupeccc.com text: Aenean commodo) ex purus, nec porttitor nunc rutrum sed. Quisque mollis sem eu odio tincidunt bibendum. Duis sit amet lorem eget tellus posuere interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras tristique porttitor libero nec fermentum. Phasellus ultrices ullamcorper nisi, ac ultricies nulla bibendum id. Praesent hendrerit maximus sagittis. Pellentesque id diam lectus. Quisque urna mi, rutrum sed condimentum quis, ultricies a diam. Fusce interdum, leo at auctor suscipit, eros lectus porttitor tortor, id posuere massa dui varius orci. Pellentesque interdum dolor sodales sem auctor laoreet. Quisque est leo, ultrices sit amet velit vel, rhoncus vehicula enim.
 
 Aenean vitae consequat magna. Cras id odio tempor, dignissim orci eu, fringilla ex. Integer ullamcorper, dui eget vulputate volutpat, arcu eros efficitur diam, in pellentesque sem neque nec nisi. Quisque feugiat urna sed massa efficitur, nec pellentesque nibh bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce magna magna, pulvinar ut dui vitae, dapibus tempor dolor. Etiam vitae vehicula mauris. Aliquam libero elit, semper pharetra dapibus et, suscipit sit amet turpes.
 
 ----
 
-Credits: © Acne Studios
+Credits: © Acne Studios, Bruno Scotti
+
+----
+
+Year: 2018
 
 ----
 
 Feedhome: true
-
-----
-
-Feedhometype: false
-
-----
-
-Feedhomeimage: 
-
-- >
-  benoit-lalloz-acne-studios-west-hollywood-1.jpg
-
-----
-
-Feedhomevimeo: 
 
 ----
 

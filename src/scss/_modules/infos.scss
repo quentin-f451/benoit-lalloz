@@ -1,35 +1,85 @@
 .infos {
-    margin-bottom: $margin-bottom;
+    display: none;
+
+    @include sm {
+        display: inline-block;
+    }
+
+    &--mobile {
+        display: inline-block;
+
+        @include sm {
+            display: none;
+        }
+    }
 }
 
 .infos__image {
-    width: 75%;
+    @include padding(1 2 0 0);
+}
+
+.infos__col {
+    width: 100%;
 
     @include sm {
-        width: 25%;
+        & > :nth-child(1) {
+            width: calc(100% - 363px);
+            float: left;
+        }
+
+        & > :nth-child(2) {
+            width: 363px;
+            float: left;
+        }
     }
 }
 
 .infos__text {
+    margin-bottom: 1rem;
+
     &--hidden {
         display: none;
     }
 
-    p:not(:first-of-type) {
-        margin-top: .5em;
+    &--small {
+        font-size: .5em;
+        & p:not(:last-of-type) {
+            margin-bottom: .5em;
+        }
+    }
+
+    &:not(:last-of-type) {
+        @include padding(0 2 0 0);
+    }
+
+    a {
+        background-size: 1px 1em;
+        box-shadow: inset 0 -0.1em $background-color, inset 0 -0.15em $text-color;
+        display: inline;
     }
 }
 
-.infos__more {
-    text-transform: uppercase;
+.toggle__more {
     cursor: pointer;
-    margin-top: .5em;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+
+    @include sm {
+        margin-bottom: 0;
+        &:hover {
+            filter: blur($blur-size);
+            color: grey;
+        }
+    }
 
     &::after {
-        content: 'Lire moins';
+        content: attr(data-moins);
+        white-space: pre;
     }
     
     &.js-previousHidden::after {
-        content: 'Lire plus';
+        content: attr(data-plus);
+        white-space: pre;
     }
 }

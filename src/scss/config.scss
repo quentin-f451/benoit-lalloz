@@ -32,7 +32,7 @@ $line-xxl:                                  2.0;      // (default: 3.0)
 // FONTS
 
 $primary-font-family:                       'Blender-Book';
-$primary-font-url:                          '../fonts/blender-book';       // Without extension
+$primary-font-url:                          '../fonts/Blender-Book';       // Without extension
 $primary-fallback:                          'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $secondary-font-family:                     'Blender-Outline';
 $secondary-font-url:                        '../fonts/BLS_LOGO-Book';       // Without extension
@@ -104,6 +104,6 @@ $screen-xxl:                                1800px;     // (default: 1800px)
 
 // FREE CONFIG
 
-$header-height:                             1rem;
+$header-height:                             calc(1rem + 4px);
 $blur-size:                                 .8px;
-$margin-bottom:                             30vh;
+$margin-bottom:                             20vh;
