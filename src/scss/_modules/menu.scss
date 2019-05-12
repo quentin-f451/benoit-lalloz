@@ -1,10 +1,41 @@
 .menu {
+    width: 100vw;
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    background: $background-color;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateY(calc(-100% - #{$header-height}));
+    transition: transform .3s ease-in-out;
+
+    &--in {
+        transform: translateY(0);
+    }
+
+    @include sm {
+        .header:hover + &, &:hover {
+            transform: translateY(0);
+        }
+    }
+}
+
+.menu__inner {
     @include margin(2 0 0 0);
-    display: none;
     width: 291px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    .menu--in & {
+        opacity: 1;
+    }
 
     @include sm {
         width: 363px;
+
+        .header:hover + .menu &, .menu:hover & {
+            opacity: 1;
+        }
     }
 }
 

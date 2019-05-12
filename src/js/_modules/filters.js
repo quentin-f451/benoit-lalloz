@@ -1,5 +1,4 @@
 import Home from './home';
-import Header from './header';
 
 const Filters = {
   init: () => {
@@ -10,7 +9,6 @@ const Filters = {
       Filters.filters.forEach(filter => {
           filter.addEventListener('click', function() {
               document.querySelector('.content').classList.add('content--hidden');
-              Header.menuLeave();
               setTimeout(function() { 
                   Home.backToTop();
               }, 300);

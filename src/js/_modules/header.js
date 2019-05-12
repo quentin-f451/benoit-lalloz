@@ -10,10 +10,6 @@ const Header = {
 
     if (window.matchMedia("(min-width: 576px)").matches) {
       Header.main.addEventListener('scroll', function (e) { Header.scrollMenu(true); })
-      if (Header.menu) {
-        Header.header.addEventListener('mouseenter', function (e) { Header.menuEnter(e); })
-        Header.header.addEventListener('mouseleave', function (e) { Header.menuLeave(e); })
-      }
     } else {
       if (Header.logo && Header.menu) Header.logo.addEventListener('click', function (e) { Header.menuClick(e); })
       if (Header.header) document.addEventListener('click', function (e) { Header.outsideClick(e); })
@@ -29,38 +25,24 @@ const Header = {
       var logoPosition = (headerWidth - logoWidth) * scrollPosition;
       logoPosition + 300 > headerWidth ? Header.header.classList.add('header--after') : Header.header.classList.remove('header--after');
       Header.header.style.paddingLeft = logoPosition + 'px';
+      Header.menu.style.paddingLeft = logoPosition + 'px';
     } else {
       Header.header.style.paddingLeft = headerWidth - 300 + 'px';
+      Header.menu.style.paddingLeft = headerWidth - 300 + 'px';
     }
-  },
-  menuEnter: (e) => {
-      Header.main.classList.add('main--blocked');
-      Header.header.classList.add('header--transition');
-      Header.header.classList.add('header--open');
-      Header.menu.slideDown(300);
-      setTimeout(function() { Header.header.classList.remove('header--transition'); }, 200)
-  },
-  menuLeave: (e) => {
-      Header.main.classList.remove('main--blocked');
-      Header.header.classList.add('header--transition');
-      Header.header.classList.remove('header--open');
-      Header.menu.slideUp(300);
-      setTimeout(function() { Header.header.classList.remove('header--transition'); }, 200)
   },
   menuClick: (e) => {
     Header.main.classList.toggle('main--blocked');
-    Header.header.classList.add('header--transition');
 
     if (Header.header.classList.contains('header--open')) {
         Header.header.classList.remove('header--open');
+        Header.menu.classList.remove('menu--in');
         if (Header.header.classList.contains('header--after')) Header.scrollMenu(true)
     } else {
       Header.header.classList.add('header--open');
+      Header.menu.classList.add('menu--in');
       if (Header.header.classList.contains('header--after')) Header.scrollMenu(false)
     }
-
-    Header.menu.slideToggle(300);
-    setTimeout(function() { Header.header.classList.remove('header--transition'); }, 200) 
   },
   outsideClick: (e) => {
     var isClickInside = Header.header.contains(e.target);

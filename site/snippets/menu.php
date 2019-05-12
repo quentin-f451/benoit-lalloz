@@ -1,5 +1,6 @@
 <div class="menu js-menu">
 
+    <div class="menu__inner">
         <?php 
             foreach($site->bigSections()->split() as $menuItem): 
             $ifChild = $menuItem == 'Collections' || $menuItem == 'Spaces' ? '' : 'menu__item--nochild';
@@ -17,5 +18,6 @@
                 <?php endif; ?>
             </div>
         <?php endforeach; ?>
-
+    </div>
+    
 </div>

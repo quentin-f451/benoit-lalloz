@@ -9,10 +9,6 @@
     flex-direction: column;
     min-height: $header-height;
     cursor: pointer;
-
-    &--transition {
-        transition: $base-transition;
-    }
 }
 
 .header * {
