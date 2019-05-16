@@ -6,6 +6,7 @@ import Infos from './_modules/infos';
 import Load from './_modules/load';
 
 (() => {
+  if (document.querySelector('.content').classList.contains('home')) document.cookie = 'filter=';
   Home.init();
   Header.init();
   Filters.init();

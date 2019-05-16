@@ -25,10 +25,10 @@ const Header = {
       var logoPosition = (headerWidth - logoWidth) * scrollPosition;
       logoPosition + 300 > headerWidth ? Header.header.classList.add('header--after') : Header.header.classList.remove('header--after');
       Header.header.style.paddingLeft = logoPosition + 'px';
-      Header.menu.style.paddingLeft = logoPosition + 'px';
+      if (Header.menu) Header.menu.style.paddingLeft = logoPosition + 'px';
     } else {
       Header.header.style.paddingLeft = headerWidth - 300 + 'px';
-      Header.menu.style.paddingLeft = headerWidth - 300 + 'px';
+      if (Header.menu) Header.menu.style.paddingLeft = headerWidth - 300 + 'px';
     }
   },
   menuClick: (e) => {

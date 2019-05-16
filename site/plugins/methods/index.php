@@ -10,6 +10,26 @@ Kirby::plugin('quentin-f451/methods', [
             }
         }
     ],
+    'pagesMethods' => [
+        'filterProject' => function($filter) {
+            $pages = [];
+            foreach($this as $page):
+                if ($filter == '') {
+                    $pages[] = $page->id();
+                } else {
+                    $filters = [];
+                    $category = $page->categorie(); 
+                    $client = $page->client();
+                    $collection = $page->collection();
+                    foreach(explode(',', $category) as $cat) $filters[] = tagslug($cat);
+                    if($client != '') $filters[] = tagslug($client);
+                    if($collection) $filters[] = tagslug($collection);
+                    if(in_array($filter, $filters)) $pages[] = $page->id();
+                }
+            endforeach;
+            return $pages;
+        }
+    ],
     'fieldMethods' => [
         'extractText' => function($field) {
             $value = $field->value;

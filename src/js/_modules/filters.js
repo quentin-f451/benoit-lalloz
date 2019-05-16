@@ -8,6 +8,9 @@ const Filters = {
       Filters.gridRows = document.querySelectorAll('.js-row');
       Filters.filters.forEach(filter => {
           filter.addEventListener('click', function() {
+              var filterName = filter.dataset.filter;
+              document.cookie = 'filter=' + filterName;
+
               document.querySelector('.content').classList.add('content--hidden');
               setTimeout(function() { 
                   Home.backToTop();
@@ -16,7 +19,6 @@ const Filters = {
               setTimeout(function() {
                 Filters.filters.forEach(f => { f.classList.remove('menu__item--selected'); });
                 Filters.grid.classList.remove('grid--hidden');
-                var filterName = filter.dataset.filter;
                 Filters.gridItem.forEach(el => {
                     el.classList.add('grid__item--hidden');
                     if (filterName == 'all') {

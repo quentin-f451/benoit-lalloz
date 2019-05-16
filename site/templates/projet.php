@@ -5,7 +5,7 @@
   </div>
   
   <main class="main">
-    <div class="content home js-content">
+    <div class="content proj js-content">
 
 <div class="project">
     <h1 class="project__text">
@@ -33,10 +33,16 @@
     </div>
 </div>
 
-<?php if ($page->hasNextListed()): ?>
-    <div class="jump"><a href="<?= $page->nextListed()->url() ?>">Jump to next project</a></div>
-<?php else: ?>
-    <div class="jump"><a href="<?= $page->prevListed()->url() ?>">Jump to previous project</a></div>
-<?php endif ?>
+<?php 
+    if(isset($_COOKIE['filter'])) $filter = $_COOKIE['filter'];
+    $projectsFilter = $site->children()->published()->filterProject($filter);
+    $projetKey = array_search($page->id(), $projectsFilter);
+    if ($projetKey < count($projectsFilter) - 1) {
+        $nextProject = $projectsFilter[$projetKey + 1];
+    } else {
+        $nextProject = $projectsFilter[0];
+    }
+?>
+<div class="jump"><a href="<?= $site->find($nextProject)->url() ?>">Jump to next project</a></div>
 
 <?php snippet('footer') ?>
