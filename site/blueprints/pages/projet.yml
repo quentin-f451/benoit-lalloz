@@ -39,7 +39,12 @@ tabs:
               feedhometype:
                 extends: fields/togglevideo
               feedhomeimage:
-                extends: fields/imagefeed
+                type: files
+                label: Sélectionner l'image
+                multiple: false
+                width: 3/4
+                image:
+                  cover: true
                 when: 
                   feedhometype: false
               feedhomevimeo:
