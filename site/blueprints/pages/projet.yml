@@ -138,3 +138,19 @@ tabs:
       projetGalerie:
         headline: Galerie
         extends: sections/galerie
+    
+      projetVimeoSection:
+        type: fields
+        fields:
+          projetVimeo:
+            type: url
+            label: Lien Vimeo
+            width: 1/2
+          vimeoPosition:
+            type: radio
+            label: Position
+            width: 1/2
+            columns: 2
+            options:
+              first: Avant la série d'images
+              last: Après la série d'images

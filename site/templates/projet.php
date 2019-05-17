@@ -17,6 +17,10 @@
     </div>
 
     <div class="project__images">
+        <?php 
+            if ($page->projetVimeo()->isNotEmpty() && $page->vimeoPosition() == "first") 
+            snippet('vimeoProjet', ['link' => $page->projetVimeo()->html()]); 
+        ?>
 		<?php foreach ($page->files()->template('galerie')->sortBy('sort','asc') as $media):?>
 			<div class="project__image">
 				<img class="thumb thumb--simple thumb--contain lazyload blur" 
@@ -26,6 +30,10 @@
                 alt="<?= $page->legendeAuto()->toCaption('home'); ?>">
 			</div>
 		<?php endforeach ?>
+        <?php 
+            if ($page->projetVimeo()->isNotEmpty() && $page->vimeoPosition() == "last") 
+            snippet('vimeoProjet', ['link' => $page->projetVimeo()->html()]); 
+        ?>
     </div>
 
     <div class="project__text project__text--credits">
