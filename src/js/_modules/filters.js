@@ -12,6 +12,17 @@ const Filters = {
               document.cookie = 'filter=' + filterName;
 
               document.querySelector('.content').classList.add('content--hidden');
+
+              document.querySelectorAll('.js-more').forEach((more) => {
+                if (filter.dataset.filter == 'infos') {
+                    more.previousElementSibling.slideDown(600, 'cubic-bezier(0.645, 0.045, 0.355, 1)');
+                    more.classList.remove('js-previousHidden');
+                } else {
+                    more.previousElementSibling.slideUp(600, 'cubic-bezier(0.645, 0.045, 0.355, 1)');
+                    more.classList.add('js-previousHidden');
+                }
+              });
+
               setTimeout(function() { 
                   Home.backToTop();
               }, 300);
@@ -40,6 +51,8 @@ const Filters = {
                 })
 
                 filter.classList.add('menu__item--selected');
+                var mh = document.querySelector('.js-main').getBoundingClientRect().height * 0.8 - document.querySelector('.infos').getBoundingClientRect().height - 48;
+                Filters.grid.style.minHeight = mh + 'px';
                 document.querySelector('.content').classList.remove('content--hidden');
               }, 500)
               
