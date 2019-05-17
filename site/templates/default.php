@@ -6,7 +6,7 @@
 
   <?php snippet('menu') ?>
   
-  <main class="main">
+  <main class="main js-main">
     <div class="content home js-content">
         
 <?php snippet('feed') ?>

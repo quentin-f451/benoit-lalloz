@@ -4,7 +4,7 @@
     <div class="header__logo js-logo"><a href="/">benoitlalloz light studio</a></div>
   </div>
   
-  <main class="main">
+  <main class="main js-main">
     <div class="content proj js-content">
 
 <div class="project">
