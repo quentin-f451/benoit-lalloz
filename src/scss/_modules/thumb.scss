@@ -1,7 +1,7 @@
 .thumb {
     object-fit: cover;
     object-position: center;
-    max-height: 60vh;
+    max-height: calc(100vh - #{$header-height});
     height: auto;
     transition: transform .3s ease-in-out, filter .3s linear;
     float: left;

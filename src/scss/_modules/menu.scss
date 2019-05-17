@@ -60,7 +60,7 @@
         }
 
         @include sm {
-            &:hover ~ .menu__item, &:hover::after {
+            body:not(.touch) &:hover ~ .menu__item, body:not(.touch) &:hover::after {
                 filter: blur($blur-size);
                 color: grey;
             }
@@ -89,7 +89,7 @@
     }
 
     @include sm {
-        &:hover span {
+        body:not(.touch) &:hover span {
             filter: blur($blur-size);
             color: grey;
         }

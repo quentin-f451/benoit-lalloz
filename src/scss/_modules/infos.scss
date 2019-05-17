@@ -12,6 +12,10 @@
             display: none;
         }
     }
+
+    body.ios & {
+        margin-bottom: 50px;
+    }
 }
 
 .infos__image {
@@ -67,7 +71,7 @@
 
     @include sm {
         margin-bottom: 0;
-        &:hover {
+        body:not(.touch) &:hover {
             filter: blur($blur-size);
             color: grey;
         }

@@ -49,6 +49,7 @@ $laboratory-grid:   3;
 
     @include to-sm {
         width: auto;
+        display: inline-block;
     }
 }
 
@@ -56,7 +57,7 @@ $laboratory-grid:   3;
     transition: $base-transition;
     
     @include sm {
-        .grid__item:hover & a, .grid__item.hover & a {
+        body:not(.touch) .grid__item:hover & a, body:not(.touch) .grid__item.hover & a {
             filter: blur($blur-size);
             color: grey;
         }

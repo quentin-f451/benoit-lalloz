@@ -33,7 +33,7 @@
         height: $header-height;
         font-size: $text-md;
         width: 363px;
-        &:hover {
+        body:not(.touch) &:hover {
             filter: blur($blur-size);
         }
     }
@@ -43,9 +43,6 @@
     }
 }
 
-.header--main a {
+body.touch .header--main a {
     pointer-events: none;
-    @include sm{
-        pointer-events: all;
-    }
 }

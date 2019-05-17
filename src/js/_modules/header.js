@@ -10,7 +10,9 @@ const Header = {
 
     if (window.matchMedia("(min-width: 576px)").matches) {
       Header.main.addEventListener('scroll', function (e) { Header.scrollMenu(true); })
-    } else {
+    } 
+
+    if (document.body.classList.contains('touch')) {
       if (Header.logo && Header.menu) Header.logo.addEventListener('click', function (e) { Header.menuClick(e); })
       if (Header.header) document.addEventListener('click', function (e) { Header.outsideClick(e); })
     };
