@@ -23,6 +23,10 @@
     padding: 2px;
     cursor: pointer;
     text-transform: uppercase;
+
+    &--back {
+        width: 54px;
+    }
     
     img {
         height: 100%;
@@ -33,6 +37,10 @@
         height: $header-height;
         font-size: $text-md;
         width: 363px;
+         &--back {
+            width: 66px;
+        }
+
         body:not(.touch) &:hover {
             filter: blur($blur-size);
         }
