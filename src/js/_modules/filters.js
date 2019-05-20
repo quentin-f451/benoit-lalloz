@@ -67,7 +67,7 @@ const Filters = {
     }
   },
   filterCookie: (filter) => {
-    if (filter != '' && filter != null) {
+    if (filter != '' && filter != null && filter != 'infos') {
       Filters.filtering(filter);
       Filters.filters.forEach(item => {
         if (item.dataset.filter == filter) item.classList.add('menu__item--selected');

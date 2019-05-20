@@ -19,7 +19,7 @@
         </div>
         <div>
             <div class="infos__text infos__text--hidden infos__text--small">
-                <p><em>Design</em><br>Alice Gavin with Quentin Creuzet and Julie Laalaj at Groupe CCC</p>
+                <p><em>Design</em><br>Alice Gavin with Quentin Creuzet and Julie Laalaj at <a href="http://groupeccc.com" target="_blank">Groupe CCC</a></p>
                 <?= $site->mentions()->kt() ?>
             </div>
             <div class="toggle__more js-more js-previousHidden" data-plus="Show legals" data-moins="Hide legals"></div>
