@@ -40,7 +40,7 @@ Legendeauto: false
 
 ----
 
-Legendemanuelle: Balenciaga store, 12 Mount Street, Mayfair, London W1K 2RD
+Legendemanuelle: Spaceship, for Balenciaga store, 12 Mount Street, Mayfair, London, Radiator collection
 
 ----
 
@@ -48,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

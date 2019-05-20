@@ -8,6 +8,8 @@ Feedhometype: false
 
 Feedhomeimage: 
 
+- benoit-lalloz-acne-studios-milan-1.jpg
+
 ----
 
 Feedhomevimeo: 
@@ -38,7 +40,7 @@ Legendeauto: false
 
 ----
 
-Legendemanuelle: Acne Studios store, Piazza del Carmine 6, Milan
+Legendemanuelle: Mega 67, for Acne Studios store, Piazza del Carmine 6, Milan, Skies collection
 
 ----
 
@@ -46,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Acne Studios, Benoit Lalloz
+Credits: © Acne Studios, Studio Benoit Lalloz
 
 ----
 

@@ -9,7 +9,7 @@ Feedhometype: false
 Feedhomeimage: 
 
 - >
-  benoit-lalloz-acne-studios-san-francisco-1.jpg
+  benoit-lalloz-acne-studios-san-francisco-2.jpg
 
 ----
 
@@ -37,11 +37,11 @@ Titleincollection: Long Line
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Long Line, for Acne Studios store, 18-24 Geary Steet, San Francisco, Radiator collection
 
 ----
 
@@ -49,7 +49,7 @@ Projettext:
 
 ----
 
-Credits: © Acne Studios, Bruno Scotti
+Credits: © Acne Studios, Studio Benoit Lalloz
 
 ----
 

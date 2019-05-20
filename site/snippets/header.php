@@ -8,15 +8,19 @@
 <!--<![endif]-->
 
 <head>
-  <title><?= $site->title() ?> | <?= $page->title() ?></title>
-
-  <meta name="author" content="">
-
   <?php if($page->template() == 'default'): ?>
+    <title><?= $site->title() ?> | Light Studio</title>
     <meta name="description" content="<?= $site->descriptionSeo()->html() ?>">
   <?php else: ?>
-    <meta name="description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
+    <title><?= $site->title() ?> | <?= $page->title() ?></title>
+    <?php if($page->projetText()->isNotEmpty()): ?>
+        <meta name="description" content="<?= $page->projetText()->html(); ?>">
+    <?php else: ?>
+        <meta name="description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
+    <?php endif; ?>
   <?php endif; ?>
+
+  <meta name="author" content="">
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

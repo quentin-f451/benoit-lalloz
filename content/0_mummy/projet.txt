@@ -1,0 +1,51 @@
+Title: Mummy
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-mummy-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: collections
+
+----
+
+Lieu: 
+
+----
+
+Client: 
+
+----
+
+Collection: Creatures
+
+----
+
+Titleincollection: Mummy
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Mummy, Creatures collection
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Gregoire Vieille, Studio Benoit Lalloz

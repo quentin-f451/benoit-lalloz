@@ -8,6 +8,8 @@ Feedhometype: false
 
 Feedhomeimage: 
 
+- benoit-lalloz-holophane-1.jpg
+
 ----
 
 Feedhomevimeo: 
@@ -38,7 +40,7 @@ Legendeauto: false
 
 ----
 
-Legendemanuelle: Holophane
+Legendemanuelle: Holophane, Glass collection
 
 ----
 
@@ -46,7 +48,7 @@ Projettext: Entrance light for the Parisian Subway
 
 ----
 
-Credits: 
+Credits: © Studio Benoit Lalloz
 
 ----
 

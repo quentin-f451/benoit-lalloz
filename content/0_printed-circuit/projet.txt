@@ -1,0 +1,51 @@
+Title: Printed Circuit
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-ci-la-6.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: collections
+
+----
+
+Lieu: 
+
+----
+
+Client: 
+
+----
+
+Collection: Micro-cities
+
+----
+
+Titleincollection: Printed Circuit LA
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Printed Circuit LA, Micro-cities collection
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Studio Benoit Lalloz

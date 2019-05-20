@@ -183,7 +183,7 @@
     
         <div class="grid__row grid__row--image grid__row--opacity js-row">
 			<?php foreach($row as $mediaSlug => $mediaArray): ?>
-				<article class="grid__item grid__item--image <?php foreach(explode(',', $mediaArray['category']) as $cat) echo $cat; ?> <?php if($mediaArray['client'] != '') echo tagslug($mediaArray['client']) . ' '; ?><?php if($mediaArray['collection'] != '') echo tagslug($mediaArray['collection']) . ' '; ?>col-<?= $mediaArray['columns'] ?> js-item">
+				<article <?php if($mediaArray['type'] == 'video') echo 'style="height: calc(' . $mediaArray['columns'] * 0.83  . 'vw * 0.5625); overflow: hidden;"'; ?> class="<?php if($mediaArray['type'] == 'video') echo 'grid__item--vid'; ?> grid__item grid__item--image <?php foreach(explode(',', $mediaArray['category']) as $cat) echo $cat; ?> <?php if($mediaArray['client'] != '') echo tagslug($mediaArray['client']) . ' '; ?><?php if($mediaArray['collection'] != '') echo tagslug($mediaArray['collection']) . ' '; ?>col-<?= $mediaArray['columns'] ?> js-item">
 					<?php 
 					if($mediaArray['type'] == "image"):
 						snippet('image', ['mediaArray' => $mediaArray]);

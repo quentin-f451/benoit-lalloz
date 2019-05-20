@@ -77,6 +77,10 @@ $laboratory-grid:   3;
     background-size: cover;
     // display: inline-block;
 
+    .grid__item--vid & {
+        height: 100%;
+    }
+
     &--hidden {
         opacity: 0;
     }

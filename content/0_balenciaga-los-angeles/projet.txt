@@ -9,7 +9,7 @@ Feedhometype: false
 Feedhomeimage: 
 
 - >
-  benoit-lalloz-balenciaga-los-angeles-4.jpg
+  benoit-lalloz-balenciaga-los-angeles-6.jpg
 
 ----
 
@@ -37,11 +37,11 @@ Titleincollection: Satellite
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Satellites, for Balenciaga store, 8670 Melrose Avenue, West Hollywood, Los Angeles, Radiator collection
 
 ----
 
@@ -49,7 +49,7 @@ Projettext:
 
 ----
 
-Credits: © Gregoire Vieille, Benoit Lalloz
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

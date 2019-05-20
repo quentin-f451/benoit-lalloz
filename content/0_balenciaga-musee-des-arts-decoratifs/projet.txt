@@ -9,7 +9,7 @@ Feedhometype: false
 Feedhomeimage: 
 
 - >
-  benoit-lalloz-balenciaga-exhibition-7.jpg
+  benoit-lalloz-balenciaga-exhibition-1.jpg
 
 ----
 
@@ -37,11 +37,11 @@ Titleincollection:
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Balenciaga Exhibition, Musee des Arts Decoratifs, Paris
 
 ----
 
@@ -49,7 +49,7 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

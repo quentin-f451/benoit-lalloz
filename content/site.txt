@@ -79,7 +79,7 @@ Ce site est la propriété exclusive de M. Benoit Lalloz. Toute reproduction ou 
 Contactfield: 
 
 <contact@benoitlalloz.com>
-(link: http://instagram.com/benoitlalloz/ text: @benoitlalloz)
+Instagram (link: http://instagram.com/benoitlalloz/ text: @benoitlalloz)
 5 rue de Charonne 
 75011 Paris
 
@@ -91,27 +91,58 @@ Descriptionseo: J’ai d'abord travaillé à la création de lumières pour le t
 
 Feeds: 
 
-- acne-studios-berlin
-- acne-studios-madison
-- acne-studios-milan
-- acne-studios-munich
-- acne-studios-san-francisco
 - acne-studios-showroom-paris
-- acne-studios-west-hollywood
-- balanciaga-london
-- balanciaga-milan
-- balenciaga-cannes
-- balenciaga-george-v
-- balenciaga-los-angeles
-- balenciaga-musee-des-arts-decoratifs
+- acne-studios-madison
 - balenciaga-roma
+- snake
+- acne-studios-milan
+- spoutnik
+- incandescence
+- acne-studios-munich
+- acne-studios-berlin
+- cycloraptor
+- balenciaga-los-angeles
+- dragonfly
+- balanciaga-milan
+- phosphorescence
+- acne-studios-san-francisco
+- mummy
+- acne-studios-west-hollywood
+- scapini
+- balanciaga-london
+- balenciaga-cannes
+- holophane
+- balenciaga-george-v
+- balenciaga-musee-des-arts-decoratifs
 - balenciaga-saint-honore
 - disque-solaire
-- holophane
-- nanosatellites
-- phosphorescence
-- snake
-- incandescence
+- celine-showroom-paris
+- nanomacronacromicro
+- orcan
+- colreg-211
+- little-city
+- printed-circuit
+- >
+  balenciaga-fashion-show-hotel-crillon-paris
+- >
+  balenciaga-fashion-show-hotel-crillon-paris
+- >
+  balenciaga-fashion-show-hotel-crillon-paris
+- >
+  balenciaga-fashion-show-hotel-crillon-paris
+- >
+  balenciaga-fashion-show-tour-de-cristal-paris
+- >
+  balenciaga-fashion-show-tour-de-cristal-paris
+- balenciaga-fashion-show-paris
+- panorama
+- nocturama
+- cosmodrome
+- the-building-which-never-dies
+- nyc-showcase
+- balenciaga-new-york-city
+- gateau-lumiere
+- planets
 
 ----
 

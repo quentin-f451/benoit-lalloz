@@ -1,0 +1,51 @@
+Title: Celine Showroom Paris
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-celine-showroom-2.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Celine
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Celine Showroom Paris
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Studio Benoit Lalloz

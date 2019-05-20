@@ -8,13 +8,15 @@ Feedhometype: false
 
 Feedhomeimage: 
 
+- benoit-lalloz-balenciaga-roma-2.jpg
+
 ----
 
 Feedhomevimeo: 
 
 ----
 
-Categorie: spaces
+Categorie: spaces, collections
 
 ----
 
@@ -34,11 +36,11 @@ Titleincollection: Scapini and Spoutnik
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Balenciaga store, Via Borgognona, 7, Roma
 
 ----
 
@@ -46,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Gregoire Vieille, Helene Chapeau, Julie Rachez
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

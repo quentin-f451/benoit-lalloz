@@ -36,11 +36,11 @@ Titleincollection:
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Acne Studios store, Maximilianplatz 10, Munich
 
 ----
 
@@ -48,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Acne Studios, Helene Chapeau
+Credits: © Acne Studios, Studio Benoit Lalloz
 
 ----
 

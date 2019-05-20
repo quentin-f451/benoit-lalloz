@@ -1,0 +1,51 @@
+Title: Cycloraptor
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-cycloraptor-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: collections, spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Exhibitions
+
+----
+
+Collection: Creatures
+
+----
+
+Titleincollection: Cycloraptor
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Cycloraptor, for TH2058 Exhibition, Tate Modern, London, Creatures collection
+
+----
+
+Projettext: With Dominique Gonzalez-Foerster
+
+----
+
+Credits: © Studio Benoit Lalloz

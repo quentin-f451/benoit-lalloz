@@ -9,7 +9,7 @@ Feedhometype: false
 Feedhomeimage: 
 
 - >
-  benoit-lalloz-benoit-lalloz-acne-studios-berlin-1.jpg
+  benoit-lalloz-benoit-lalloz-acne-studios-berlin-5.jpg
 
 ----
 
@@ -41,7 +41,7 @@ Legendeauto: false
 
 ----
 
-Legendemanuelle: Acne Studios store, Weinmeisterstraße 2, Berlin
+Legendemanuelle: Acne Studios store, Potsdamer Straße 87, Berlin
 
 ----
 

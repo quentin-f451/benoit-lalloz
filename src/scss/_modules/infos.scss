@@ -53,7 +53,7 @@
     }
 
     &:not(:last-of-type) {
-        @include padding(0 2 0 0);
+        @include padding(0 8 0 0);
     }
 
     a {

@@ -1,5 +1,1 @@
 Template: galerie
-
-----
-
-Sort: 6

@@ -1,0 +1,51 @@
+Title: Panorama
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-panorama-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Exhibitions
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Panorama, Musee d'Art Moderne, Paris
+
+----
+
+Projettext: With Dominique GOnzalez-Foerster
+
+----
+
+Credits: © Gregoire Vieille, Studio Benoit Lalloz

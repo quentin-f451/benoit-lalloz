@@ -8,7 +8,7 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-balenciaga-george-v-2.jpg
+- benoit-lalloz-balenciaga-george-v-1.jpg
 
 ----
 
@@ -36,11 +36,11 @@ Titleincollection: Climatic
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Balenciaga store, 10, Avenue George V, Paris
 
 ----
 
@@ -48,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Acne Studios, Bruno Scotti, Benoit Lalloz
+Credits: © Acne Studios, Studio Benoit Lalloz
 
 ----
 

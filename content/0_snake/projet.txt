@@ -8,8 +8,6 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-snake-1-sur-3.jpg
-
 ----
 
 Feedhomevimeo: 
@@ -36,19 +34,27 @@ Titleincollection:
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Snake
 
 ----
 
-Projettext: 
+Projettext: with Francois Roche
 
 ----
 
-Credits: 
+Credits: © Studio Benoit Lalloz
+
+----
+
+Projetvimeo: 
+
+----
+
+Vimeoposition: 
 
 ----
 

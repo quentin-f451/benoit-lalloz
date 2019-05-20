@@ -2,7 +2,7 @@ Title: Phosphorescence
 
 ----
 
-Feedhometype: false
+Feedhometype: true
 
 ----
 
@@ -12,7 +12,7 @@ Feedhomeimage:
 
 ----
 
-Feedhomevimeo: 
+Feedhomevimeo: https://vimeo.com/337235703
 
 ----
 
@@ -48,7 +48,15 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Studio Benoit Lalloz
+
+----
+
+Projetvimeo: https://vimeo.com/337235703
+
+----
+
+Vimeoposition: last
 
 ----
 

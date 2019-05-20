@@ -3,7 +3,7 @@
 // FONT SIZES
 
 $text-default-px:                           24;       // Default font-size in px (default: 16px)
-$line-height-default:                       1;     // Default line-height, relative to default font-size (default: 1.25)
+$line-height-default:                       1.1;     // Default line-height, relative to default font-size (default: 1.25)
 
 // Viewport values
 $is-global-viewport-text:                   false;     // true for font-size globally defined in vw, false for font-size globally defined in px
@@ -104,6 +104,6 @@ $screen-xxl:                                1800px;     // (default: 1800px)
 
 // FREE CONFIG
 
-$header-height:                             calc(1rem + 4px);
+$header-height:                             calc(1.2rem + 4px);
 $blur-size:                                 .8px;
 $margin-bottom:                             20vh;

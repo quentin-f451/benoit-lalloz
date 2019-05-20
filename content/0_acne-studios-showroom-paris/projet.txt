@@ -9,7 +9,7 @@ Feedhometype: false
 Feedhomeimage: 
 
 - >
-  benoit-lalloz-acne-studios-showroom-5.jpg
+  benoit-lalloz-acne-studios-showroom-4.jpg
 
 ----
 
@@ -37,11 +37,11 @@ Titleincollection:
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Acne Studios Showroom, Paris
 
 ----
 
@@ -49,7 +49,7 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Studio Benoit Lalloz
 
 ----
 

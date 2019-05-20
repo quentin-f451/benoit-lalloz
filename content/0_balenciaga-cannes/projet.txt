@@ -8,13 +8,15 @@ Feedhometype: false
 
 Feedhomeimage: 
 
+- benoit-lalloz-balenciaga-cannes-2.jpg
+
 ----
 
 Feedhomevimeo: 
 
 ----
 
-Categorie: spaces
+Categorie: spaces, collections
 
 ----
 
@@ -26,7 +28,7 @@ Client: Balenciaga
 
 ----
 
-Collection: 
+Collection: Radiators
 
 ----
 
@@ -34,11 +36,11 @@ Titleincollection:
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Satellites, for Balenciaga store, 65 boulevard de la Croisette, Cannes, Radiator collection
 
 ----
 
@@ -46,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: 
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

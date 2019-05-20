@@ -8,6 +8,8 @@ Feedhometype: false
 
 Feedhomeimage: 
 
+- benoit-lalloz-balenciaga-st-honore-1.jpg
+
 ----
 
 Feedhomevimeo: 
@@ -34,11 +36,11 @@ Titleincollection: Scapini
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Scapini, for Balenciaga store, 336, rue Saint-Honoré, Paris, Creatures collection
 
 ----
 
@@ -46,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Helene Chapeau, Bruno Scotti, Gregoire Vieille
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

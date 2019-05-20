@@ -26,6 +26,10 @@
 @import "_base/_partials/_margins";       // Initiate margins and padding
 @import "_base/_partials/_type";          // Initiate type
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 // IMPORT MODULES
 // Add here the scss files for the website
 @import "_modules/main";

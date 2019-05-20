@@ -14,7 +14,7 @@
     }
 
     @include sm {
-        .header:hover + &, &:hover {
+        body:not(.touch) .header:hover + &, body:not(.touch) &:hover {
             transform: translateY(0);
         }
     }
@@ -33,7 +33,7 @@
     @include sm {
         width: 363px;
 
-        .header:hover + .menu &, .menu:hover & {
+        body:not(.touch) .header:hover + .menu &, body:not(.touch) .menu:hover & {
             opacity: 1;
         }
     }

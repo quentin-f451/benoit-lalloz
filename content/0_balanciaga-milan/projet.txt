@@ -36,11 +36,11 @@ Titleincollection: Satellites
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Satellites, for Balenciaga store, Via Montenapoleone 23, Milan, Radiator collection
 
 ----
 
@@ -48,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Gregoire Vieille, Benoit Lalloz
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
 
 ----
 

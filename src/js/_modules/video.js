@@ -10,7 +10,7 @@ const Video = {
             playButton.addEventListener('click', function(){ Video.play(this, videoPlayer, imageLayer); })
         });
     }, 
-    play: (buttons, iframe, thumbs, played) => {
+    play: (buttons, iframe, thumbs) => {
         var player = new Vimeo.Player(iframe);
         thumbs.classList.toggle('grid__image--hidden');
         thumbs.nextElementSibling.classList.toggle('grid__video--over');

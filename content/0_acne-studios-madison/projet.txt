@@ -36,11 +36,11 @@ Titleincollection: Horizon
 
 ----
 
-Legendeauto: true
+Legendeauto: false
 
 ----
 
-Legendemanuelle: 
+Legendemanuelle: Horizon, for Acne Studios store, 926 Madison Avenue, New York City, Skies collection
 
 ----
 
@@ -48,7 +48,7 @@ Projettext:
 
 ----
 
-Credits: © Acne Studios, Helene Chapeau
+Credits: © Acne Studios, Studio Benoit Lalloz
 
 ----
 
