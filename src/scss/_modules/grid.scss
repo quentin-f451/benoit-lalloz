@@ -50,6 +50,10 @@ $laboratory-grid:   3;
     @include to-sm {
         width: auto;
         display: inline-block;
+
+        &--hidden {
+            display: none;
+        }
     }
 }
 

@@ -11,7 +11,7 @@ const Load = {
       var time = setTimeout(function() {
         item.classList.remove('grid__row--opacity')
       }, h);
-      document.querySelector('.js-main').addEventListener('scroll', function() {
+      window.addEventListener('scroll', function() {
           clearTimeout(time);
           item.classList.remove('grid__row--opacity');
       })

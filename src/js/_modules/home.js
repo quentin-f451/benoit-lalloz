@@ -2,7 +2,6 @@ import animateScrollTo from 'animated-scroll-to';
 
 const Home = {
   init: () => {
-    Home.main = document.querySelector('.main');
     Home.thumbs = document.querySelectorAll('.js-thumb');
     Home.items = document.querySelectorAll('.js-item');
 
@@ -21,7 +20,7 @@ const Home = {
   backToTop: () => {
     animateScrollTo(0, {
       speed: 200,
-      element: Home.main
+      maxDuration: 200,
     })
   },
   hoverThumb: (e, element) => {

@@ -43,6 +43,7 @@
 
 <?php 
     if(isset($_COOKIE['filter'])) $filter = $_COOKIE['filter'];
+    if($_COOKIE['filter'] == 'all') $filter = '';
     $projectsFilter = $site->children()->published()->filterProject($filter);
     $projetKey = array_search($page->id(), $projectsFilter);
     if ($projetKey < count($projectsFilter) - 1) {

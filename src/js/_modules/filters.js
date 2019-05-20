@@ -62,12 +62,12 @@ const Filters = {
     })
 
     if (document.querySelector('.infos')) {
-      var mh = document.querySelector('.js-main').getBoundingClientRect().height * 0.8 - document.querySelector('.infos').getBoundingClientRect().height - 48;
+      var mh = window.innerHeight * 0.8 - document.querySelector('.infos').getBoundingClientRect().height - 48;
       Filters.grid.style.minHeight = mh + 'px';
     }
   },
   filterCookie: (filter) => {
-    if (filter != '') {
+    if (filter != '' && filter != null) {
       Filters.filtering(filter);
       Filters.filters.forEach(item => {
         if (item.dataset.filter == filter) item.classList.add('menu__item--selected');

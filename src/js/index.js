@@ -1,8 +1,4 @@
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks
-} from 'body-scroll-lock';
+import lazySizes from 'lazysizes';
 
 import Home from './_modules/home';
 import Header from './_modules/header';
@@ -12,10 +8,14 @@ import Infos from './_modules/infos';
 import Load from './_modules/load';
 
 (() => {
-  disableBodyScroll(document.querySelector('.js-main'));
+  lazySizes.cfg.expand = 1000;
+  lazySizes.cfg.expFactor = 2.5;
   var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  var isiOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+  var ua = window.navigator.userAgent;
+  var iOS = !!ua.match(/iP(ad|hone)/i);
+  var webkit = !!ua.match(/WebKit/i);
+  var isiOS = iOS && webkit && !ua.match(/CriOS/i);
+
   if (isTouch) document.body.classList.add('touch');
   if (isiOS) document.body.classList.add('ios');
 
