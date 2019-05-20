@@ -21,6 +21,4 @@ return [
 
   'panel' => array('css' => 'assets/css/panel.css'),
 
-  'debug'  => true
-
 ];
