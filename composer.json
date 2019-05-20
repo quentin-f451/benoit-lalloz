@@ -22,7 +22,9 @@
         "getkirby/cms": "^3.0",
         "k-community/markdown-field": "^1.0",
         "sylvainjule/pagetable": "^1.0",
-        "sylvainjule/quickpages": "^1.0"
+        "sylvainjule/quickpages": "^1.0",
+        "omz13/kirby3-xmlsitemap": "^1.2",
+        "omz13/kirby3-wellknown": "^0.2.1"
     },
     "config": {
         "optimize-autoloader": true

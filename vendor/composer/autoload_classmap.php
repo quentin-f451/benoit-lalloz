@@ -245,4 +245,6 @@ return array(
     'Zend\\Escaper\\Exception\\InvalidArgumentException' => $vendorDir . '/zendframework/zend-escaper/src/Exception/InvalidArgumentException.php',
     'Zend\\Escaper\\Exception\\RuntimeException' => $vendorDir . '/zendframework/zend-escaper/src/Exception/RuntimeException.php',
     'claviska\\SimpleImage' => $vendorDir . '/claviska/simpleimage/src/claviska/SimpleImage.php',
+    'omz13\\K3WellKnown' => $baseDir . '/site/plugins/kirby3-wellknown/src/wellknown.php',
+    'omz13\\XMLSitemap' => $baseDir . '/site/plugins/kirby3-xmlsitemap/src/xmlsitemap.php',
 );

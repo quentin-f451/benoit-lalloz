@@ -15,6 +15,10 @@ class ComposerStaticInitd5a2ee782f23b9d4a94b733792df3d4c
     );
 
     public static $prefixLengthsPsr4 = array (
+        'o' => 
+        array (
+            'omz13\\' => 6,
+        ),
         'Z' => 
         array (
             'Zend\\Escaper\\' => 13,
@@ -43,6 +47,11 @@ class ComposerStaticInitd5a2ee782f23b9d4a94b733792df3d4c
     );
 
     public static $prefixDirsPsr4 = array (
+        'omz13\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby3-wellknown/src',
+            1 => __DIR__ . '/../..' . '/site/plugins/kirby3-xmlsitemap/src',
+        ),
         'Zend\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
@@ -335,6 +344,8 @@ class ComposerStaticInitd5a2ee782f23b9d4a94b733792df3d4c
         'Zend\\Escaper\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/zendframework/zend-escaper/src/Exception/InvalidArgumentException.php',
         'Zend\\Escaper\\Exception\\RuntimeException' => __DIR__ . '/..' . '/zendframework/zend-escaper/src/Exception/RuntimeException.php',
         'claviska\\SimpleImage' => __DIR__ . '/..' . '/claviska/simpleimage/src/claviska/SimpleImage.php',
+        'omz13\\K3WellKnown' => __DIR__ . '/../..' . '/site/plugins/kirby3-wellknown/src/wellknown.php',
+        'omz13\\XMLSitemap' => __DIR__ . '/../..' . '/site/plugins/kirby3-xmlsitemap/src/xmlsitemap.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
