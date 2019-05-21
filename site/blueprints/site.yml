@@ -134,3 +134,18 @@ tabs:
                   back: white
                   query: page.toFeedImage
                 label: Homepage
+
+  
+  matomo:
+    label: Analytics
+    icon: preview
+    columns:
+
+      - width: 3/4
+        sections:
+          main:
+            type: matomo-main
+      - width: 1/4
+        sections:
+          sidebar:
+            type: matomo-sidebar

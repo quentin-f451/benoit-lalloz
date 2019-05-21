@@ -21,4 +21,8 @@ return [
 
   'panel' => array('css' => 'assets/css/panel.css'),
 
+  'sylvainjule.matomo.url'        => 'http://matomo.quentincreuzet.fr/',
+  'sylvainjule.matomo.id'         => '1',
+  'sylvainjule.matomo.token'      => 'c56530eed14b1d574a05017526de6cad',
+
 ];

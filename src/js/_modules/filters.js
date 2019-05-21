@@ -13,7 +13,7 @@ const Filters = {
 
         document.querySelector('.content').classList.add('content--hidden');
 
-        document.querySelectorAll('.js-more').forEach((more) => {
+        document.querySelectorAll('.js-moreInfos').forEach((more) => {
           if (filter.dataset.filter == 'infos') {
             more.previousElementSibling.slideDown(600, 'cubic-bezier(0.645, 0.045, 0.355, 1)');
             more.classList.remove('js-previousHidden');
