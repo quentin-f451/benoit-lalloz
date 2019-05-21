@@ -154,3 +154,10 @@ tabs:
             options:
               first: Avant la série d'images
               last: Après la série d'images
+          line-b:
+            type: line
+
+      videoGalerie:
+        headline: Images du feed au hover d'une vidéo
+        extends: sections/galerie
+        template: vimeo

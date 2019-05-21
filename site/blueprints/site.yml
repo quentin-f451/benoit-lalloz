@@ -149,3 +149,4 @@ tabs:
         sections:
           sidebar:
             type: matomo-sidebar
+            link: false

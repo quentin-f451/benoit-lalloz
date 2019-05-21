@@ -16,12 +16,13 @@ Collections: Radiators, Skies, Creatures, Glass, Micro-cities
 
 Presentation: 
 
+*Créateur et plasticien lumière français. Benoit Lalloz crée des lumières et objets lumineux qui rassemblent art, design, science et technologie. Il travaille pour de prestigieuses marques internationales, ainsi que dans des musées de renom.*
+***
+Notes :
+
 J’ai d'abord travaillé à la création de lumières pour le théâtre et l’opéra, puis pour l’éclairage d’œuvres dans des musées, ainsi que pour de l’éclairage d’ouvrages d’art, et enfin à la création d’œuvres d’art où la lumière était l’essence même des œuvres. 
 
 Toutes ces créations lumières, la plupart du temps des œuvres de collaboration, ont emprunté avec abondance aux couleurs.
-
-***
-
 En septembre 2002, à l’occasion du Festival de la Création Numérique, la mise en lumière de la Grande Halle de la Villette à Paris m’a été confiée.
 
 Mon travail fut ainsi décrit : « La création lumière de Benoit Lalloz accompagne ce voyage sensible et sémantique par des temps visuels décomposés afin d’influencer la perception de l’espace et de ses différents éléments ». 
@@ -52,7 +53,7 @@ Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 d
 Propriétaire :  M. Benoit Lalloz
 Adresse : 5 rue de Charonne 75011 Paris
 Téléphone : 01.40.21.33.03
-E mail : info@benoitlalloz.com
+E mail : contact@benoitlalloz.com
 N°SIRET : 44225775400030
 N° TVA intracommunautaire : FR96442257754
 Responsable publication : M. Benoit Lalloz
@@ -85,7 +86,7 @@ Instagram (link: http://instagram.com/benoitlalloz/ text: @benoitlalloz)
 
 ----
 
-Descriptionseo: J’ai d'abord travaillé à la création de lumières pour le théâtre et l’opéra, puis pour l’éclairage d’œuvres dans des musées, ainsi que pour de l’éclairage d’ouvrages d’art, et enfin à la création d’œuvres d’art où la lumière était l’essence même des œuvres.
+Descriptionseo: Créateur et plasticien lumière français. Benoit Lalloz crée des lumières et objets lumineux qui rassemblent art, design, science et technologie. Il travaille pour de prestigieuses marques internationales, ainsi que dans des musées de renom.
 
 ----
 
@@ -122,18 +123,8 @@ Feeds:
 - colreg-211
 - little-city
 - printed-circuit
-- >
-  balenciaga-fashion-show-hotel-crillon-paris
-- >
-  balenciaga-fashion-show-hotel-crillon-paris
-- >
-  balenciaga-fashion-show-hotel-crillon-paris
-- >
-  balenciaga-fashion-show-hotel-crillon-paris
-- >
-  balenciaga-fashion-show-tour-de-cristal-paris
-- >
-  balenciaga-fashion-show-tour-de-cristal-paris
+- balenciaga-fashion-show-hotel-crillon-paris
+- balenciaga-fashion-show-tour-de-cristal-paris
 - balenciaga-fashion-show-paris
 - panorama
 - nocturama
@@ -143,6 +134,7 @@ Feeds:
 - balenciaga-new-york-city
 - gateau-lumiere
 - planets
+- optical-researches
 
 ----
 

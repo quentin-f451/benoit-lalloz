@@ -64,7 +64,11 @@
 			$mediaOrientation = 'landscape';
 			$mediaRatio = 1.77777;
 			$medias = array();
-			$gallery = $project->files()->template('galerie');
+            if ($project->files()->template('vimeo')->count() > 0) {
+                $gallery = $project->files()->template('vimeo');
+            } else {
+                $gallery = $project->files()->template('galerie');
+            }
 
 			foreach ($gallery as $m) {
                 $mediaSrcBlur = $m->thumb('blur')->url();
