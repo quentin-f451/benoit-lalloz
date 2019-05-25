@@ -84,6 +84,8 @@
         })();
     </script>
 
+    <meta name="google-site-verification" content="r1Qcx084AekDB36affLBgZnfjTr_DvAZDe9VCAeL52U" />
+
 </head>
 
 <body>
