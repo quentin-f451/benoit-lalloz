@@ -1,0 +1,109 @@
+Title: Snake
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Exhibitions
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Snake
+
+----
+
+Projettext: with Francois Roche
+
+----
+
+Credits: © Studio Benoit Lalloz
+
+----
+
+Projetvimeo: 
+
+----
+
+Vimeoposition: 
+
+----
+
+Feedhome: true
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: - benoit-lalloz-snake-3-sur-3.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

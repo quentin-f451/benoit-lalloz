@@ -1,0 +1,51 @@
+Title: Balenciaga Fashion show, Tour de Cristal, Paris
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-defile-2012-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Balenciaga
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Balenciaga Fashion show, Tour de Cristal, Paris
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Gregoire Vieille

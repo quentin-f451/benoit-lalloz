@@ -1,0 +1,107 @@
+Title: Balenciaga Saint-Honore
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-balenciaga-st-honore-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces, collections
+
+----
+
+Lieu: Paris
+
+----
+
+Client: Balenciaga
+
+----
+
+Collection: Creatures
+
+----
+
+Titleincollection: Scapini
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Scapini, for Balenciaga store, 336, rue Saint-Honoré, Paris, Creatures collection
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
+
+----
+
+Year: 2012
+
+----
+
+Feedhome: false
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

@@ -1,0 +1,60 @@
+Title: The building which never dies
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- >
+  benoit-lalloz-thebuildingwhichneverdies-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Exhibitions
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: The Building Which Never Dies
+
+----
+
+Projettext: With Francois Roche
+
+----
+
+Credits: © Francois Roche, Studio Benoit Lalloz
+
+----
+
+Projetvimeo: 
+
+----
+
+Vimeoposition: 

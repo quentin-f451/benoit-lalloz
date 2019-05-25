@@ -1,0 +1,51 @@
+Title: Balenciaga Fashion show, Hotel Crillon, Paris
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-defile-2010-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces
+
+----
+
+Lieu: 
+
+----
+
+Client: Balenciaga
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Balenciaga Fashion show, Hotel Crillon, Paris
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Gregoire Vieille

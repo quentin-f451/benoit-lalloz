@@ -1,0 +1,51 @@
+Title: ColReg 211
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-colreg211-3.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: collections
+
+----
+
+Lieu: 
+
+----
+
+Client: 
+
+----
+
+Collection: Glass
+
+----
+
+Titleincollection: ColReg 211
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: ColReg 211, Glass collection
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Studio Benoit Lalloz

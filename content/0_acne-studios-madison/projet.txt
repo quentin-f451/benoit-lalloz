@@ -1,0 +1,107 @@
+Title: Acne Studios Madison
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-acne-studios-madison-1.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces, collections
+
+----
+
+Lieu: Madison Avenue, NYC
+
+----
+
+Client: Acne Studios
+
+----
+
+Collection: Skies
+
+----
+
+Titleincollection: Horizon
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Horizon, for Acne Studios store, 926 Madison Avenue, New York City, Skies collection
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Acne Studios, Studio Benoit Lalloz
+
+----
+
+Year: 2016
+
+----
+
+Feedhome: true
+
+----
+
+Feedspaces: true
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: - benoit-lalloz-acne-studios-madison-1.jpg
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

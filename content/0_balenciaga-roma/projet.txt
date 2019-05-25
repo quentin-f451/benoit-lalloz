@@ -1,0 +1,107 @@
+Title: Balenciaga Roma
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+- benoit-lalloz-balenciaga-roma-2.jpg
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: spaces, collections
+
+----
+
+Lieu: Roma
+
+----
+
+Client: Balenciaga
+
+----
+
+Collection: Creatures
+
+----
+
+Titleincollection: Scapini and Spoutnik
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Balenciaga store, Via Borgognona, 7, Roma
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Gregoire Vieille, Studio Benoit Lalloz
+
+----
+
+Year: 2012
+
+----
+
+Feedhome: false
+
+----
+
+Feedspaces: false
+
+----
+
+Feedspacestype: false
+
+----
+
+Feedspacesimage: 
+
+----
+
+Feedspacesvimeo: 
+
+----
+
+Feedcollections: false
+
+----
+
+Feedcollectionstype: false
+
+----
+
+Feedcollectionsimage: 
+
+----
+
+Feedcollectionsvimeo: 
+
+----
+
+Feedlaboratory: false
+
+----
+
+Feedlaboratorytype: false
+
+----
+
+Feedlaboratoryimage: 
+
+----
+
+Feedlaboratoryvimeo: 

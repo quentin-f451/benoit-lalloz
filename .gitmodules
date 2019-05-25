@@ -4,9 +4,3 @@
 [submodule "src/scss/_base"]
 	path = src/scss/_base
 	url = https://github.com/quentin-f451/scss-starterkit.git
-[submodule "content"]
-	path = content
-	url = https://github.com/quentin-f451/benoit-lalloz_content.git
-[submodule "git-commit-and-push-content"]
-	path = site/plugins/kirby-git-commit-and-push-content
-	url = https://github.com/blankogmbh/kirby-git-commit-and-push-content.git

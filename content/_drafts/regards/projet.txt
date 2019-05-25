@@ -1,0 +1,57 @@
+Title: Regards
+
+----
+
+Feedhometype: false
+
+----
+
+Feedhomeimage: 
+
+----
+
+Feedhomevimeo: 
+
+----
+
+Categorie: laboratory
+
+----
+
+Lieu: 
+
+----
+
+Client: 
+
+----
+
+Collection: 
+
+----
+
+Titleincollection: 
+
+----
+
+Legendeauto: false
+
+----
+
+Legendemanuelle: Regards
+
+----
+
+Projettext: 
+
+----
+
+Credits: © Studio Benoit Lalloz
+
+----
+
+Projetvimeo: 
+
+----
+
+Vimeoposition: first
