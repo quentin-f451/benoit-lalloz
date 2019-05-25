@@ -7,3 +7,6 @@
 [submodule "content"]
 	path = content
 	url = https://github.com/quentin-f451/benoit-lalloz_content.git
+[submodule "git-commit-and-push-content"]
+	path = site/plugins/kirby-git-commit-and-push-content
+	url = https://github.com/blankogmbh/kirby-git-commit-and-push-content.git
