@@ -105,6 +105,19 @@ Kirby::plugin('quentin-f451/methods', [
     'hooks' => [
         'file.create:after' => function ($file) {
             $file->changeName('benoit-lalloz-' . F::name($file->filename()));
+            if($file->isResizable()) {
+                try {
+                    $resizedImageA = $file->resize(200, 200, 40)->save();
+                    $resizedImageB = $file->resize(400, 400, 80)->save();
+                    $resizedImageC = $file->resize(750, 750, 80)->save();
+                    $resizedImageD = $file->resize(1000, 1000, 80)->save();
+                    $resizedImageE = $file->resize(1720, 1440, 80)->save();
+                    $resizedImageF = $file->resize(2560, 1440, 80)->save();
+                }
+                catch (Exception $e) {
+                    throw new Exception($e->getMessage());
+                }
+            }
         },
         'page.update:after' => function ($newPage, $oldPage) {
             addToFeed($newPage);
