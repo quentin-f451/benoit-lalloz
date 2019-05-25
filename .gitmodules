@@ -4,3 +4,6 @@
 [submodule "src/scss/_base"]
 	path = src/scss/_base
 	url = https://github.com/quentin-f451/scss-starterkit.git
+[submodule "content"]
+	path = content
+	url = https://github.com/quentin-f451/benoit-lalloz_content.git
