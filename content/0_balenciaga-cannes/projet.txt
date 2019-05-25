@@ -8,7 +8,7 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-balenciaga-cannes-2.jpg
+- benoit-lalloz-balenciaga-cannes-4.jpg
 
 ----
 
@@ -49,6 +49,14 @@ Projettext:
 ----
 
 Credits: © Gregoire Vieille, Studio Benoit Lalloz
+
+----
+
+Projetvimeo: 
+
+----
+
+Vimeoposition: 
 
 ----
 

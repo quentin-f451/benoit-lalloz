@@ -8,7 +8,7 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-balenciaga-london-1.jpg
+- benoit-lalloz-balenciaga-london-5.jpg
 
 ----
 
@@ -49,6 +49,14 @@ Projettext:
 ----
 
 Credits: © Gregoire Vieille, Studio Benoit Lalloz
+
+----
+
+Projetvimeo: 
+
+----
+
+Vimeoposition: 
 
 ----
 

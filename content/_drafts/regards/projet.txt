@@ -1,4 +1,4 @@
-Title: Celine Showroom Paris
+Title: Regards
 
 ----
 
@@ -8,15 +8,13 @@ Feedhometype: false
 
 Feedhomeimage: 
 
-- benoit-lalloz-celine-showroom-2.jpg
-
 ----
 
 Feedhomevimeo: 
 
 ----
 
-Categorie: spaces
+Categorie: laboratory
 
 ----
 
@@ -24,7 +22,7 @@ Lieu:
 
 ----
 
-Client: Celine
+Client: 
 
 ----
 
@@ -40,7 +38,7 @@ Legendeauto: false
 
 ----
 
-Legendemanuelle: Celine Showroom, Paris
+Legendemanuelle: Regards
 
 ----
 
@@ -56,4 +54,4 @@ Projetvimeo:
 
 ----
 
-Vimeoposition: 
+Vimeoposition: first

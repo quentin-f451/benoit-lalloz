@@ -16,32 +16,32 @@ Collections: Radiators, Skies, Creatures, Glass, Micro-cities
 
 Presentation: 
 
-*Créateur et plasticien lumière français. Benoit Lalloz crée des lumières et objets lumineux qui rassemblent art, design, science et technologie. Il travaille pour de prestigieuses marques internationales, ainsi que dans des musées de renom.*
+French designer and light artist, Benoit Lalloz creates lights and lighted objects that contain elements of art, design, science and technology. He works for leading international brands, as well as renowned museums.
 ***
-Notes :
+Notes:
+I started with designing lights for the theatre and opera, then worked on museum lighting, as well artwork lighting, and finally began creating works of art where light was the essence of the work. 
 
-J’ai d'abord travaillé à la création de lumières pour le théâtre et l’opéra, puis pour l’éclairage d’œuvres dans des musées, ainsi que pour de l’éclairage d’ouvrages d’art, et enfin à la création d’œuvres d’art où la lumière était l’essence même des œuvres. 
+All of these light designs, most of which were collaborative works, made liberal use of colour.
 
-Toutes ces créations lumières, la plupart du temps des œuvres de collaboration, ont emprunté avec abondance aux couleurs.
-En septembre 2002, à l’occasion du Festival de la Création Numérique, la mise en lumière de la Grande Halle de la Villette à Paris m’a été confiée.
+In September 2002, for the Festival de la Création Numérique, I was invited to do the lighting at Grande Halle de la Villette in Paris.
 
-Mon travail fut ainsi décrit : « La création lumière de Benoit Lalloz accompagne ce voyage sensible et sémantique par des temps visuels décomposés afin d’influencer la perception de l’espace et de ses différents éléments ». 
+This is how my work was described: “Benoit Lalloz’s lighting design accompanies this sensitive and semantic journey with deconstructed visual elements that influence the perception of space and its various elements”. 
 
-Ma démarche créative avait été d’appauvrir la lumière blanche halogène, pour ne conserver qu’une lumière « grise » gommant de l’espace toute couleur autre que celle émise par des œuvres lumineuses. Il s’agissait d’appauvrir et retirer des formes, des matières et un maximum de signes visuels de cette architecture.
+My creative process was to diminish the white halogen light, leaving only a “grey” light that erased all colour from the space except that emitted by the lighted works. It was about diminishing and removing shapes, materials and as many visual indicators from this architecture as possible.
 
-La représentation visuelle de la Grande Halle de la Villette en fut ainsi radicalement modifiée et eut un très fort impact.
+This radically changed the visual appearance of the Grande Halle de la Villette, which made a very strong impact.
 
-Ma compréhension de ce que la lumière blanche pouvait apporter ou soustraire au concept de « représentation »,  en fut transformée.
+My understanding of what white light could add or subtract from the idea of “appearance” was transformed.
 
-Cette expérience constitua un tournant, dévoilant une nouvelle perspective : explorer l’appauvrissement ou l’enrichissement de la lumière blanche.
+This experience was a turning point that revealed a new perspective: exploring the impoverishment or enrichment of white light.
 
-Je travaille maintenant à la création de compositions / décompositions de lumières blanches : j’en recherche les différentes « âmes », aux nuances subtiles. 
+Now I work on creating white light constructions/deconstructions. I search for different “souls”, for subtle nuances. 
 
-Créer une intelligence de la lumière blanche, générer un esprit visuel.
+Creating an understanding of white light, generating a visual spirit.
 
-Les Inuits possèdent une quinzaine de mots différents pour exprimer les nuances de blanc.
+The Inuit have more than a dozen different words to describe shades of white.
 
-De la même façon, il n’y a pas une lumière blanche mais de multiples niveaux de blancheur de la lumière. Le coeur de ma démarche est justement d’explorer cette multiplicité en expérimentant leur décomposition et leur recomposition.
+In the same way, there is not just one white light, but many levels of whiteness within light. At its core, my process is to explore this multiplicity by experimenting with deconstructing and reconstructing these levels.
 
 ----
 
@@ -59,14 +59,10 @@ N° TVA intracommunautaire : FR96442257754
 Responsable publication : M. Benoit Lalloz
 
 Hébergeur site
-Adobe Business Catalyst
-par Adobe Systems Software Ireland Limited
-4-6 Riverwalk, City West Business Campus
-Saggart, Dublin 24
-Ireland
-
-*Google Analytics*
-Ce site utilise Google Analytics, un service d'analyse de site Internet fourni par Google Inc. (« Google »). Google Analytics utilise des cookies, qui sont des fichiers texte placés sur votre ordinateur, pour aider le site internet à analyser l'utilisation du site par ses utilisateurs. Les données générées par les cookies concernant votre utilisation du site (y compris votre adresse IP) seront transmises et stockées par Google sur des serveurs situés aux Etats-Unis. Google utilisera cette information dans le but d'évaluer votre utilisation du site, de compiler des rapports sur l'activité du site à destination de son éditeur et de fournir d'autres services relatifs à l'activité du site et à l'utilisation d'Internet. Google est susceptible de communiquer ces données à des tiers en cas d'obligation légale ou lorsque ces tiers traitent ces données pour le compte de Google, y compris notamment l'éditeur de ce site. Google ne recoupera pas votre adresse IP avec toute autre donnée détenue par Google. Vous pouvez désactiver l'utilisation de cookies en sélectionnant les paramètres appropriés de votre navigateur. Cependant, une telle désactivation pourrait empêcher l'utilisation de certaines fonctionnalités de ce site. En utilisant ce site Internet, vous consentez expressément au traitement de vos données nominatives par Google dans les conditions et pour les finalités décrites ci-dessus.
+OVH
+ 2 rue Kellermann
+ 59100 Roubaix
+ France
 
 *Gestion des données personnelles*
 L'utilisateur dispose d'un droit d'accès, de modification, de rectification et de suppression des données qui le concernent (article 38 et suivants de la loi "Informatique et Libertés").
@@ -86,7 +82,7 @@ Instagram (link: http://instagram.com/benoitlalloz/ text: @benoitlalloz)
 
 ----
 
-Descriptionseo: Créateur et plasticien lumière français. Benoit Lalloz crée des lumières et objets lumineux qui rassemblent art, design, science et technologie. Il travaille pour de prestigieuses marques internationales, ainsi que dans des musées de renom.
+Descriptionseo: French designer and light artist, Benoit Lalloz creates lights and lighted objects that contain elements of art, design, science and technology. He works for leading international brands, as well as renowned museums.
 
 ----
 
@@ -95,46 +91,48 @@ Feeds:
 - acne-studios-showroom-paris
 - acne-studios-madison
 - balenciaga-roma
-- snake
 - acne-studios-milan
-- spoutnik
-- incandescence
-- acne-studios-munich
-- acne-studios-berlin
-- cycloraptor
-- balenciaga-los-angeles
 - dragonfly
-- balanciaga-milan
-- phosphorescence
+- incandescence
+- cycloraptor
+- acne-studios-munich
+- snake
+- balenciaga-los-angeles
+- acne-studios-berlin
+- spoutnik
 - acne-studios-san-francisco
+- phosphorescence
+- balanciaga-milan
+- celine-showroom-paris
 - mummy
 - acne-studios-west-hollywood
+- >
+  balenciaga-fashion-show-tour-de-cristal-paris
+- nocturama
 - scapini
 - balanciaga-london
-- balenciaga-cannes
 - holophane
+- orcan
+- planets
+- balenciaga-cannes
 - balenciaga-george-v
 - balenciaga-musee-des-arts-decoratifs
+- cosmodrome
 - balenciaga-saint-honore
+- nyc-showcase
 - disque-solaire
-- celine-showroom-paris
 - nanomacronacromicro
-- orcan
 - colreg-211
+- optical-researches
 - little-city
 - printed-circuit
-- balenciaga-fashion-show-hotel-crillon-paris
-- balenciaga-fashion-show-tour-de-cristal-paris
+- >
+  balenciaga-fashion-show-hotel-crillon-paris
 - balenciaga-fashion-show-paris
 - panorama
-- nocturama
-- cosmodrome
 - the-building-which-never-dies
-- nyc-showcase
 - balenciaga-new-york-city
 - gateau-lumiere
-- planets
-- optical-researches
 
 ----
 
