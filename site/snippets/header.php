@@ -61,11 +61,14 @@
     <meta name="twitter:description" content="<?= $site->descriptionSeo()->html() ?>">
     <meta name="twitter:image" content="<?php foreach($site->images()->template('imageseo') as $imageseo){echo $imageseo->url();} ?>">
     <meta property="og:image" content="<?php foreach($site->images()->template('imageseo') as $imageseo){echo $imageseo->url();} ?>">
-  <?php else: ?>
+    <?php 
+        else: 
+        $fileUrl = $page->files()->template('galerie')->first() ? $page->files()->template('galerie')->first() : $page->files()->template('vimeo')->first();
+    ?>
     <meta property="og:description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
     <meta name="twitter:description" content="<?= $page->legendeAuto()->toCaption('home'); ?>">
-    <meta name="twitter:image" content="<?php echo $page->files()->template('galerie')->first()->url() ?>">
-    <meta property="og:image" content="<?php echo $page->files()->template('galerie')->first()->url() ?>">
+    <meta name="twitter:image" content="<?php echo $fileUrl->url() ?>">
+    <meta property="og:image" content="<?php echo $fileUrl->url() ?>">
   <?php endif; ?>
 
   <?= css('assets/css/bundle.css') ?>
