@@ -20,6 +20,10 @@
 .project__images {
     display: flex;
     flex-direction: column;
+
+    body.ios & {
+        display: block;
+    }
 }
 
 .project__image {
