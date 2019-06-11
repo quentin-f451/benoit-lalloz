@@ -1,73 +1,125 @@
 .header {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: $background-color;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    min-height: $header-height;
-    cursor: pointer;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $background-color;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  min-height: $header-height;
+  cursor: pointer;
 }
 
 .header * {
-    user-select: none;
+  user-select: none;
+}
+
+.header__burger {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 12px;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease;
+
+  @include sm {
+    margin-top: 13px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s ease;
+
+    @include sm {
+      width: 20px;
+    }
+  }
+
+  &:before {
+    top: -3px;
+  }
+
+  &:after {
+    top: 3px;
+  }
+
+  .header--open & {
+    margin-left: 1px;
+
+    @include sm {
+      margin-left: 3px;
+    }
+
+    &::before,
+    &::after  {
+      top: 1px;
+      width: 19px;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
 }
 
 .header__logo {
-    @extend .font-2;
-    height: 24px;
-    display: inline-block;
-    width: 314px;
-    padding: 2px;
-    cursor: pointer;
-    text-transform: uppercase;
+  @extend .font-2;
+  height: 24px;
+  display: inline-block;
+  width: 316px;
+  padding: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
 
-    &:not(.header__logo--back)::before {
-      content: '';
-      width: 15px;
-      height: 7px;
-      margin-bottom: 3px;
-      margin-right: 8px;
-      display: inline-block;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
-
-      @include sm {
-        margin-bottom: 4px;
-        margin-right: 15px;
-        height: 9px;
-      }
-    }
-
-    &--back {
-        width: 54px;
-    }
-    
-    img {
-        height: 100%;
-        width: auto;
-    }
+  &--main a {
+    margin-left: 25px;
 
     @include sm {
-        height: $header-height;
-        font-size: $text-md;
-        width: 393px;
-         &--back {
-            width: 66px;
-        }
+      margin-left: 28px;
+    }
+  }
 
-        body:not(.touch) &:hover {
-            filter: blur($blur-size);
-        }
+  &--back {
+    width: 54px;
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  @include sm {
+    height: $header-height;
+    font-size: $text-md;
+    width: 391px;
+    &--back {
+      width: 66px;
     }
 
-    &:focus, & a:focus {
-        outline: none !important; 
+    body:not(.touch) &:hover a span {
+      filter: blur($blur-size);
     }
+  }
+
+  &:focus,
+  & a:focus {
+    outline: none !important;
+  }
 }
 
 body.touch .header--main a {
-    pointer-events: none;
+  pointer-events: none;
 }

@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
   <div class="header js-header header--main">
-    <div class="header__logo js-logo"><a href="/">benoitlalloz light studio</a></div>
+    <div class="header__logo header__logo--main js-logo"><span class="header__burger"></span><a href="/"><span>benoitlalloz</span> light studio</a></div>
   </div>
 
   <?php snippet('menu') ?>
