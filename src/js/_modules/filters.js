@@ -9,7 +9,7 @@ const Filters = {
     Filters.filters.forEach(filter => {
       filter.addEventListener('click', function () {
         var filterName = filter.dataset.filter;
-        document.cookie = 'filter=' + filterName;
+        document.cookie = 'filter=' + filterName + '; max-age=1200';
 
         document.querySelector('.content').classList.add('content--hidden');
 
