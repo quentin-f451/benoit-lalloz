@@ -23,7 +23,7 @@
     "animated-scroll-to": "^1.2.2",
     "body-scroll-lock": "^2.6.1",
     "dom-slider": "^1.5.3",
-    "lazysizes": "^5.0.0-rc1",
+    "lazysizes": "^5.2.1",
     "siblings": "^1.0.1"
   },
   "devDependencies": {
